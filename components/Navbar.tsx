@@ -18,7 +18,7 @@ function Navbar() {
           {/* Navigation Links for larger screens */}
           <div className={`hidden lg:flex lg:items-center lg:space-x-6 ml-6`}>
             <a
-              href="#home"
+              href="/"
               className="text-gray-700 hover:text-gray-900  font-semibold px-2.5 rounded-lg"
             >
               Home
@@ -36,13 +36,13 @@ function Navbar() {
               Services
             </a>
             <a
-              href="#about"
+              href="/about"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
               About 
             </a>
             <a
-              href="#about"
+              href="/contact"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
               Contact 
@@ -78,7 +78,7 @@ function Navbar() {
           <ul className="flex flex-col  mt-5 space-y-2">
             <li>
               <a
-                href="#home"
+                href="/"
                 className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg"
               >
                 Home
@@ -102,7 +102,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#about"
+                href="/about"
                 className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg"
               >
                 About
@@ -110,7 +110,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#about"
+                href="/contact"
                 className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg"
               >
                 Contact

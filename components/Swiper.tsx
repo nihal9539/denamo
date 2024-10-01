@@ -48,7 +48,7 @@ const Swiper: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative max-w-[100vw] h-[90vh] max-md:h-[50vh]">
+    <div className="relative h-[90vh] max-md:h-[50vh]">
       <div className="relative w-full h-full overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center">
           {slides.map((slide, index) => (
@@ -102,18 +102,7 @@ const Swiper: React.FC = () => {
         <ChevronRight size={45} />
       </button>
 
-      {/* Navigation Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4 z-30">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => changeSlide(index)}
-            className={`p-1.5 rounded-full cursor-pointer ${
-              currentIndex === index ? "bg-black/90" : "bg-black/20"
-            }`}
-          />
-        ))}
-      </div>
+     
     </div>
   );
 };

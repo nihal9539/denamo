@@ -12,6 +12,7 @@
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "aos": "^2.3.4",
     "circletype": "^2.3.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -22,8 +23,10 @@
     "motion": "^10.18.0",
     "next": "14.2.5",
     "react": "^18",
+    "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-multi-carousel": "^2.8.5",
+    "react-visibility-sensor": "^5.1.1",
     "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
