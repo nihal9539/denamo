@@ -11,12 +11,12 @@ const OurPartners = () => {
         { name: "logo ipsum", logo: "/client/icon-6.jpeg" },
       ]
   return (
-    <section className="py-12 px-4 bg-gray-100 md:px-6  lg:px-8">
+    <section className="py-12 px-4 bg-gray-100 md:px-6  lg:px-10">
       <div className="flex max-md:flex-col items-center justify-center">
         <div className="w-1/3">
         <h2 className="text-4xl font-bold mb-4">Our Clients</h2>
-            <p className="text-lg text-gray-600">
-              Dynamic Teams, Trusted Partnerships, Lasting Impact
+            <p className="text-xl    font-semibold text-gray-600">
+              Dynamic Teams, Trusted Partnerships,<br/> Lasting Impact
             </p>
         </div>
         <div className="w-2/3">

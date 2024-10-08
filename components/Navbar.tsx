@@ -24,7 +24,7 @@ function Navbar() {
               Home
             </a>
             <a
-              href="#packages"
+              href="/projects"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
               Projects
