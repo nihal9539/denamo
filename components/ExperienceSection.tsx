@@ -8,7 +8,7 @@ export default function ExperienceSection() {
         <div>
           <h2 className="text-xl text-black mb-4">ABOUT DENAMO</h2>
           <h3 className="text-5xl max-md:text-4xl text-gray-600 font-bold mb-6">
-            We're Experienced in This Field
+            We&apos;re Experienced in This Field
           </h3>
           <p className="text-gray-600 mb-6">
             Emporium tortor vel orci efficitur, in venenatis felis molestie. In
