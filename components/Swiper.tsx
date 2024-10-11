@@ -66,7 +66,7 @@ const Swiper: React.FC = () => {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/30 z-10"></div>
+              <div className="absolute inset-0 bg-black/15 z-10"></div>
 
               {/* Title and Subtitle with animation */}
               {currentIndex === index && (
