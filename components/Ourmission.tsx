@@ -2,9 +2,9 @@ import React from "react";
 
 const Ourmission = () => {
   return (
-    <section className="grid grid-cols-2 max-md:grid-cols-1 items-center pb-16 px-28 max-md:px-5">
+    <section className="grid grid-cols-2 text-gray-600 max-md:grid-cols-1 items-center pb-16 px-28 max-md:px-5">
       <div>
-        <h1 className="font-bold text-6xl mb-10 leading-4 max-md:text-5xl">
+        <h1 className="font-bold  text-6xl mb-10 leading-4 max-md:text-5xl">
           Our Mission
         </h1>
         <p>

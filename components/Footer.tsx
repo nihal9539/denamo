@@ -3,16 +3,22 @@ import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-cover relative bg-center bg-no-repeat text-white py-12"
+      style={{ backgroundImage: "url('/footer.jpg')" }}  // Ensure the image URL is correct
+    >
+      {/* Darker black overlay for better text visibility */}
+      <div className="absolute inset-0 z-0 bg-black opacity-80"></div>
+
+      {/* Footer content with increased z-index */}
+      <div className="relative container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* About Company */}
           <div>
             <h2 className="text-xl font-semibold mb-4">About Company</h2>
             <p className="mb-4">A small business can be better than a big business because of agility and adaptability due to their size and scale.</p>
-            <p className=" font-semibold mb-2">Since 2000</p>
+            <p className="font-semibold mb-2">Since 2000</p>
             <p className="uppercase mb-1">WE ARE AVAILABLE</p>
-            <p><span className="">Mon-Sat:</span> 10:00am to 07:30pm</p>
+            <p><span>Mon-Sat:</span> 10:00am to 07:30pm</p>
           </div>
 
           {/* Useful Links 1 */}
@@ -23,11 +29,11 @@ export default function Footer() {
               <li><Link href="#" className="hover:text-white">What We Do</Link></li>
               <li><Link href="#" className="hover:text-white">News & Article</Link></li>
               <li><Link href="#" className="hover:text-white">Success Story</Link></li>
-              <li><Link href="#" className="hover:text-white">FAQ's</Link></li>
+              <li><Link href="#" className="hover:text-white">FAQ&apos;s</Link></li>
             </ul>
           </div>
 
-          {/* Useful Links 2 */}
+          {/* More Links */}
           <div>
             <h2 className="text-xl font-semibold mb-4">More Links</h2>
             <ul className="space-y-2">

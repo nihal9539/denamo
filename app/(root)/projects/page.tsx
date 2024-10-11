@@ -9,6 +9,7 @@ import { ArrowRight } from "lucide-react"
 
 const projectCategories = [
     { name: "Residential Projects", image: "/project/Residential-Projects.jpg " , featured: true },
+    { name: "Hotels & Restaurants Projects", image: "/project/Residential-Projects.jpg " , featured: false },
     { name: "Commercial Projects", image: "/project/Commercial-Projects.jpg " , featured: true },
     { name: "Educational Projects", image: "/project/Educational-Projects.jpg " , featured: false },
     { name: "Training Facility Projects", image: "/project/Training-Facility-Projects.jpg " , featured: false },
@@ -64,7 +65,7 @@ export default function ProjectCategories() {
           ))}
         </div>
 
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {regularCategories.map((category, index) => (
             <Card key={index} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-32">
