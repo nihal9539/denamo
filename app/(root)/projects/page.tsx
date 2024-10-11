@@ -6,32 +6,32 @@ import { ArrowRight } from "lucide-react";
 const projectCategories = [
   {
     name: "Residential Projects",
-    image: "/project/Residential-Projects.jpg ",
+    image: "/project/Residential-Projects.jpg",
     featured: true,
   },
   {
     name: "Hotels & Restaurants Projects",
-    image: "/project/Residential-Projects.jpg ",
+    image: "/project/Residential-Projects.jpg",
     featured: false,
   },
   {
     name: "Commercial Projects",
-    image: "/project/Commercial-Projects.jpg ",
+    image: "/project/Commercial-Projects.jpg",
     featured: true,
   },
   {
     name: "Educational Projects",
-    image: "/project/Educational-Projects.jpg ",
+    image: "/project/Educational-Projects.jpg",
     featured: false,
   },
   {
     name: "Training Facility Projects",
-    image: "/project/Training-Facility-Projects.jpg ",
+    image: "/project/Training-Facility-Projects.jpg",
     featured: false,
   },
   {
     name: "Medical Projects",
-    image: "/project/Medical-Projects.jpg ",
+    image: "/project/Medical-Projects.jpg",
     featured: false,
   },
   {
@@ -41,33 +41,33 @@ const projectCategories = [
   },
   {
     name: "Mosque Design Projects",
-    image: "/project/Mosque.jpg ",
+    image: "/project/Mosque.jpg",
     featured: false,
   },
-  { name: "Office Projects", image: "/project/Office.jpg ", featured: false },
+  { name: "Office Projects", image: "/project/Office.jpg", featured: false },
   {
     name: "Gym & Spa Projects",
-    image: "/project/spa-gym.jpg ",
+    image: "/project/spa-gym.jpg",
     featured: false,
   },
   {
     name: "Shopping Mall Projects",
-    image: "/project/mall-1.jpg ",
+    image: "/project/mall-1.jpg",
     featured: false,
   },
   {
     name: "Landscape Projects",
-    image: "/project/Landscape-Projects.jpg ",
+    image: "/project/Landscape-Projects.jpg",
     featured: false,
   },
   {
     name: "Electromechanical Projects",
-    image: "/project/Electromechanical-1.jpg ",
+    image: "/project/Electromechanical-1.jpg",
     featured: false,
   },
   {
     name: "Industrial Projects",
-    image: "/project/Industrial.jpg ",
+    image: "/project/Industrial.jpg",
     featured: true,
   },
 ];
