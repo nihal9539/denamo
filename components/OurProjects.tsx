@@ -1,33 +1,48 @@
-"use client"
+"use client";
 
-
-
-
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight, Building2 } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, Building2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Card, CardContent } from "./ui/card";
 
 export default function ConstructionProjects() {
-    const projects = [
-        { id: 1, title: "Modern Office Complex", image: "/const/1.jpg" },
-        { id: 2, title: "Luxury Apartment Tower", image: "/const/2.jpg" },
-        { id: 3, title: "Sustainable Green Building", image: "/const/3.jpg" },
-        { id: 4, title: "Historic Building Renovation", image: "/const/4.jpg" },
-        { id: 5, title: "Industrial Warehouse", image: "/const/5.jpg" },
-        { id: 6, title: "Shopping Mall Complex", image: "/const/6.jpg" },
-      ]
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const [isMounted, setIsMounted] = useState(false)
+  const projects = [
+    {
+      title: "Residential Projects",
+      image: "/project/Residential-Projects.jpg",
+    },
+    {
+      title: "Hotels & Restaurants Projects",
+      image: "/project/Residential-Projects.jpg",
+    },
+    {
+      title: "Commercial Projects",
+      image: "/project/Commercial-Projects.jpg",
+    },
+    {
+      title: "Educational Projects",
+      image: "/project/Educational-Projects.jpg",
+    },
+    {
+      title: "Training Facility Projects",
+      image: "/project/Training-Facility-Projects.jpg",
+    },
+    {
+      title: "Medical Projects",
+      image: "/project/Medical-Projects.jpg",
+    },
+  ];
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
   if (!isMounted) {
-    return null // Return null on server-side and during initial client-side render
+    return null; // Return null on server-side and during initial client-side render
   }
 
   return (
@@ -38,15 +53,15 @@ export default function ConstructionProjects() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1   max-sm:hidden md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {projects.map((project, index) => (
             <motion.div
-              key={project.id}
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative overflow-hidden group"
+              className="relative cursor-pointer overflow-hidden group"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -56,23 +71,13 @@ export default function ConstructionProjects() {
                   alt={project.title}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                 />
-                {/* <AnimatePresence>
-                  {hoveredIndex === index && (
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 0.75 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  )}
-                </AnimatePresence> */}
+
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.div
                       className="absolute inset-0 bg-black"
-                      initial={{ opacity: 0, x: "50%" ,y:"80%"}}
-                      animate={{ opacity: 0.4, x: "0%",y:"0%" }}
+                      initial={{ opacity: 0, x: "50%", y: "80%" }}
+                      animate={{ opacity: 0.4, x: "0%", y: "0%" }}
                       exit={{ opacity: 0, x: "100%" }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     />
@@ -88,7 +93,9 @@ export default function ConstructionProjects() {
                     exit={{ y: "100%" }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
                     <p className="text-sm">Click to view project details</p>
                   </motion.div>
                 )}
@@ -106,6 +113,30 @@ export default function ConstructionProjects() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className=" grid-cols-1 hidden  max-md:grid  gap-5"
+        >
+          {projects.map((project, index) => (
+            <div key={index}>
+              <Card>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                />
+                <CardContent className=" mt-5">
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm">Click to view project details</p>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-12 text-center"
         >
@@ -118,5 +149,5 @@ export default function ConstructionProjects() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

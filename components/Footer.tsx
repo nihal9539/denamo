@@ -11,7 +11,7 @@ export default function Footer() {
 
       {/* Footer content with increased z-index */}
       <div className="relative container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* About Company */}
           <div>
             <h2 className="text-xl font-semibold mb-4">About Company</h2>
