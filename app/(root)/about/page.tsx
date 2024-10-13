@@ -26,14 +26,30 @@ const AboutPage = () => {
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="w-full flex-col justify-center items-start gap-8 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-gray-600 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  {/* <h2 className="text-gray-600 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
                     Empowering Each Other to Succeed
-                  </h2>
+                  </h2> */}
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    Every project we&apos;ve undertaken has been a collaborative
+                    {/* Every project we&apos;ve undertaken has been a collaborative
                     effort, where every person involved has left their mark.
                     Together, we&apos;ve not only constructed buildings but also
-                    built enduring connections that define our success story.
+                    built enduring connections that define our success story. */}
+                    Since its inception, Delano Company Limited has established
+                    itself as a global leader in Architectural Design, Interior
+                    Design, Engineering, Hospitality Management, Hotel
+                    Operation, and Real Estate Development. With operations
+                    spanning Saudi Arabia, the USA, the Russian Federation, and
+                    Egypt, we draw on the expertise of over 250 architects,
+                    engineers, project managers, and developers. Our team
+                    delivers innovative ideas, solutions, and technology,
+                    guiding projects from concept to completion. At Delano, we
+                    specialize in diverse sectors including residential and
+                    commercial developments, hospitality projects, educational
+                    institutions, mega malls, healthcare facilities, and office
+                    spaces. As an independent, employee-owned consortium, we
+                    focus solely on the needs of our clients, offering unbiased
+                    advice and solutions tailored to their unique challenges and
+                    budgets.
                   </p>
                 </div>
                 <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">

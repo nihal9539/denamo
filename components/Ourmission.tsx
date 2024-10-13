@@ -8,13 +8,14 @@ const Ourmission = () => {
           Our Mission
         </h1>
         <p>
-          We focus on innovation, sustainability, and delivering excellence. By
-          adopting advanced technologies and eco-friendly practices, we ensure
-          that our projects are efficient and responsible. Our goal is to
-          integrate smart building solutions and provide personalized services
-          tailored to each client’s needs. Through talent development and strong
-          international partnerships, we aim to expand into new markets and set
-          higher standards for the industry.
+          At Delano Company Limited, our mission is to transform visionary ideas
+          into reality by delivering world-class architectural, engineering, and
+          hospitality solutions. We are committed to fostering innovation,
+          ensuring excellence in every project, and tailoring our services to
+          meet the unique needs of our clients. Guided by collaboration,
+          integrity, and sustainability, we aim to create spaces that inspire,
+          enhance lives, and drive long-term value for communities and
+          businesses worldwide.
         </p>
       </div>
       <div className="flex gap-5 max-md:mt-5 max-md:px-0  px-10 flex-col">

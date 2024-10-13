@@ -5,12 +5,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" fixed top-0 w-screen  flex justify-center z-[999] p-3 bg-transparent ">
-      <div className={`bg-white/90 w-[85%] max-md:w-[100%] shadow-lg  px-3.5 py-2 rounded-3xl max-md:rounded-2xl`}>
+    <div className=" fixed top-0 w-screen  flex justify-center z-[999] p-3 bg-transparent ">
+      <div
+        className={`bg-white/90 w-[85%] max-md:w-[100%] shadow-lg  px-3.5 py-2 rounded-3xl max-md:rounded-2xl`}
+      >
         <div className="container mx-auto flex items-center justify-start">
           {/* Logo */}
           <a href="#" className="flex items-center" id="logo">
-            <img src="./logo.jpg" className="w-10 h-8" alt="Logo" />
+            <img src="/logo.jpg" className="w-10 h-8" alt="Logo" />
           </a>
 
           {/* Hamburger button (only visible on small screens) */}
@@ -29,8 +31,9 @@ function Navbar() {
             >
               Projects
             </a>
+
             <a
-              href="#services"
+              href="/service"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
               Services
@@ -39,13 +42,13 @@ function Navbar() {
               href="/about"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
-              About 
+              About
             </a>
             <a
               href="/contact"
               className="text-gray-700 hover:text-gray-900  py-2 font-semibold px-2.5 rounded-lg"
             >
-              Contact 
+              Contact
             </a>
           </div>
           <button
@@ -119,7 +122,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 

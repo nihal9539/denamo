@@ -11,15 +11,15 @@ export default function Footer() {
 
       {/* Footer content with increased z-index */}
       <div className="relative container mx-auto px-4 z-10">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* About Company */}
-          <div>
+          {/* <div>
             <h2 className="text-xl font-semibold mb-4">About Company</h2>
             <p className="mb-4">A small business can be better than a big business because of agility and adaptability due to their size and scale.</p>
             <p className="font-semibold mb-2">Since 2000</p>
             <p className="uppercase mb-1">WE ARE AVAILABLE</p>
             <p><span>Mon-Sat:</span> 10:00am to 07:30pm</p>
-          </div>
+          </div> */}
 
           {/* Useful Links 1 */}
           <div>

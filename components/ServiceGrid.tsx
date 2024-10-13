@@ -1,61 +1,56 @@
 import React from "react";
 
+const services = [
+  {
+    title: "Architectural",
+    description: "Creative designs merging beauty and functionality to support future growth.",
+    image: "/service/1.jpg",
+  },
+  {
+    title: "Interior Design",
+    description: "Elegant interiors crafted for comfort, style, and seamless living experiences.",
+    image: "/service/6.jpg",
+  },
+  {
+    title: "BIM",
+    description: "Data-driven solutions for efficient building planning, design, and management.",
+    image: "/service/4.jpg",
+  },
+  {
+    title: "Residential",
+    description: "Modern homes designed to enhance comfort, lifestyle, and personal well-being.",
+    image: "/service/2.jpg",
+  },
+];
+
+
+
 const ServiceGrid = () => {
   return (
     <section>
-      <div className="grid grid-cols-4 max-md:grid-cols-2 text-white h-[75vh] max-md:h-auto  overflow-hidden  ">
-        <div className="relative h-[75vh] max-md:h-80 w-full">
-          <div className="absolute z-20 space-y-3 bottom-10 max-md:left-5 max-md:bottom-5 left-10">
-            <h1 className=" uppercase text-2xl max-md:text-lg font-semibold">architecture</h1>
-            <p className="pb-4 max-md:text-sm" >
-              Architecture Designed for Growth and Seamless Flexibility
-            </p>
-            <div className="border-2 flex border-white max-md:text-xs  text-sm bg-transparent  p-3 font-semibold w-36 max-md:w-[7.5rem]">
-              VIEW PROJECT
+      <div className="grid grid-cols-4 max-md:grid-cols-2 text-white h-[75vh] max-md:h-auto overflow-hidden">
+        {services.map((service, index) => (
+          <div key={index} className="relative h-[75vh] max-md:h-80 w-full group">
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/45 transition-all"></div>
+
+            {/* Content */}
+            <div className="absolute z-20 space-y-3 bottom-10 max-md:left-5 max-md:bottom-5 left-10">
+              <h1 className="uppercase text-2xl max-md:text-lg font-semibold">
+                {service.title}
+              </h1>
+              <p className="pb-4 max-md:text-sm">{service.description}</p>
+
+              {/* Button */}
+              <button className="border-2 border-white text-base max-md:text-xs bg-transparent p-3 px-5 font-semibold max-md:w-[7.5rem] hover:bg-white hover:text-black transition-all">
+              View Details
+              </button>
             </div>
+
+            {/* Image */}
+            <img src={service.image} className="h-full w-full object-cover" alt={service.title} />
           </div>
-          <img src="/service/1.jpg" className="h-full w-full" alt="" />
-          <div className="absolute inset-0 bg-black/45 z-10"></div>
-        </div>
-        <div className="relative h-[75vh] max-md:h-80 w-full">
-          <div className="absolute z-20 space-y-3 bottom-10 max-md:left-5 max-md:bottom-5 left-10">
-            <h1 className=" uppercase text-2xl max-md:text-lg font-semibold">architecture</h1>
-            <p className="pb-4 max-md:text-sm" >
-              Architecture Designed for Growth and Seamless Flexibility
-            </p>
-            <div className="border-2 flex border-white max-md:text-xs  text-sm bg-transparent  p-3 font-semibold w-36 max-md:w-[7.5rem]">
-              VIEW PROJECT
-            </div>
-          </div>
-          <img src="/service/6.jpg" className="h-full w-full" alt="" />
-          <div className="absolute inset-0 bg-black/45 z-10"></div>
-        </div>
-        <div className="relative h-[75vh] max-md:h-80 w-full">
-          <div className="absolute z-20 space-y-3 bottom-10 max-md:left-5 max-md:bottom-5 left-10">
-            <h1 className=" uppercase text-2xl max-md:text-lg font-semibold">architecture</h1>
-            <p className="pb-4 max-md:text-sm" >
-              Architecture Designed for Growth and Seamless Flexibility
-            </p>
-            <div className="border-2 flex border-white max-md:text-xs  text-sm bg-transparent  p-3 font-semibold w-36 max-md:w-[7.5rem]">
-              VIEW PROJECT
-            </div>
-          </div>
-          <img src="/service/4.jpg" className="h-full w-full" alt="" />
-          <div className="absolute inset-0 bg-black/45 z-10"></div>
-        </div>
-        <div className="relative h-[75vh] max-md:h-80 w-full">
-          <div className="absolute z-20 space-y-3 bottom-10 max-md:left-5 max-md:bottom-5 left-10">
-            <h1 className=" uppercase text-2xl max-md:text-lg font-semibold">Residential</h1>
-            <p className="pb-4 max-md:text-sm" >
-            Residential Spaces Tailored for Modern Living
-            </p>
-            <div className="border-2 flex border-white max-md:text-xs  text-sm bg-transparent  p-3 font-semibold w-36 max-md:w-[7.5rem]">
-              VIEW PROJECT
-            </div>
-          </div>
-          <img src="/service/2.jpg" className="h-full w-full" alt="" />
-          <div className="absolute inset-0 bg-black/45 z-10"></div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -11,13 +11,18 @@ export default function ExperienceSection() {
             We&apos;re Experienced in This Field
           </h3>
           <p className="text-gray-600 mb-6">
-            Emporium tortor vel orci efficitur, in venenatis felis molestie. In
-            lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum
-            ut dolor hendrerit, non ultricies urna accumsan.
+            With decades of expertise, Delano Company Limited is a trusted
+            leader in Architectural Design, Interior Design, Engineering,
+            Hospitality Management, and Real Estate Development. Operating
+            across Saudi Arabia, the USA, the Russian Federation, and Egypt, we
+            leverage the experience of over 250 professionals to deliver
+            innovative solutions across diverse sectors.
           </p>
           <p className="text-gray-600 mb-8">
-            Donec vitae risus eget nisi molestie vehicula quis vel magna. Donec
-            tristique mauris eu fermentum dignissim.
+            Our portfolio includes residential, commercial, hospitality,
+            healthcare, retail, and educational projects. Every project reflects
+            our commitment to excellence, innovation, and client satisfaction.
+            At Delano, we create spaces that inspire, evolve, and endure.
           </p>
           <div className="flex justify-between mb-8">
             <div>
@@ -33,9 +38,9 @@ export default function ExperienceSection() {
               <p className="text-gray-600">Best Partners</p>
             </div>
           </div>
-          <Button className="bg-gray-600 hover:bg-gray-700 text-white">
+          {/* <Button className="bg-gray-600 hover:bg-gray-700 text-white">
             READ MORE
-          </Button>
+          </Button> */}
         </div>
         <div className="flex flex-col items-start h-full  overflow-hidden  gap-3.5">
           <div className="flex gap-3.5 w-full  justify-center">
