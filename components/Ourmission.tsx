@@ -8,7 +8,7 @@ const Ourmission = () => {
           Our Mission
         </h1>
         <p>
-          At Delano Company Limited, our mission is to transform visionary ideas
+          Our mission is to transform visionary ideas
           into reality by delivering world-class architectural, engineering, and
           hospitality solutions. We are committed to fostering innovation,
           ensuring excellence in every project, and tailoring our services to

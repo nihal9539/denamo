@@ -34,7 +34,7 @@ const AboutPage = () => {
                     effort, where every person involved has left their mark.
                     Together, we&apos;ve not only constructed buildings but also
                     built enduring connections that define our success story. */}
-                    Since its inception, Delano Company Limited has established
+                    Delano Company Limited has established
                     itself as a global leader in Architectural Design, Interior
                     Design, Engineering, Hospitality Management, Hotel
                     Operation, and Real Estate Development. With operations

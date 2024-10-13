@@ -6,64 +6,41 @@ import { ArrowRight, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent } from "./ui/card";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function ConstructionProjects() {
   const projects = [
-    {
-      title: "Residential Projects",
-      image: "/project/Residential-Projects.jpg",
-    },
-    {
-      title: "Hotels & Restaurants Projects",
-      image: "/project/Residential-Projects.jpg",
-    },
-    {
-      title: "Commercial Projects",
-      image: "/project/Commercial-Projects.jpg",
-    },
-    {
-      title: "Educational Projects",
-      image: "/project/Educational-Projects.jpg",
-    },
-    {
-      title: "Training Facility Projects",
-      image: "/project/Training-Facility-Projects.jpg",
-    },
-    {
-      title: "Medical Projects",
-      image: "/project/Medical-Projects.jpg",
-    },
+    { title: "Residential Projects", image: "/project/Residential-Projects.jpg" },
+    { title: "Hotels & Restaurants Projects", image: "/project/Residential-Projects.jpg" },
+    { title: "Commercial Projects", image: "/project/Commercial-Projects.jpg" },
+    { title: "Educational Projects", image: "/project/Educational-Projects.jpg" },
+    { title: "Training Facility Projects", image: "/project/Training-Facility-Projects.jpg" },
+    { title: "Medical Projects", image: "/project/Medical-Projects.jpg" },
   ];
+
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [isMounted, setIsMounted] = useState(false);
 
+  // Initialize AOS
   useEffect(() => {
-    setIsMounted(true);
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
   }, []);
-
-  if (!isMounted) {
-    return null; // Return null on server-side and during initial client-side render
-  }
 
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-gray-100 to-gray-200">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Our Projects</h2>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-1   max-sm:hidden md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <h2 className="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+          Our Projects
+        </h2>
+        <div className="grid grid-cols-1 max-sm:hidden md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative cursor-pointer overflow-hidden group"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              data-aos="fade-up"
+              data-aos-delay={index * 200} // Add delay for staggered animation
             >
               <div className="relative h-64 w-full">
                 <img
@@ -71,7 +48,6 @@ export default function ConstructionProjects() {
                   alt={project.title}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                 />
-
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.div
@@ -93,9 +69,7 @@ export default function ConstructionProjects() {
                     exit={{ y: "100%" }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-xl font-semibold mb-2">
-                      {project.title}
-                    </h3>
+                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                     <p className="text-sm">Click to view project details</p>
                   </motion.div>
                 )}
@@ -107,15 +81,11 @@ export default function ConstructionProjects() {
               >
                 <Building2 className="w-8 h-8 text-white" />
               </motion.div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className=" grid-cols-1 hidden  max-md:grid  gap-5"
-        >
+        </div>
+
+        <div className="grid-cols-1 hidden max-md:grid gap-5" data-aos="fade-up">
           {projects.map((project, index) => (
             <div key={index}>
               <Card>
@@ -124,29 +94,23 @@ export default function ConstructionProjects() {
                   alt={project.title}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                 />
-                <CardContent className=" mt-5">
-                  <h3 className="text-xl font-semibold mb-2">
-                    {project.title}
-                  </h3>
+                <CardContent className="mt-5">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-sm">Click to view project details</p>
                 </CardContent>
               </Card>
             </div>
           ))}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-12 text-center"
-        >
+        </div>
+
+        <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="600">
           <Link href="/projects">
             <Button size="lg" className="group">
               View All Projects
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

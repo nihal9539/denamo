@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const services = [
   {
@@ -23,14 +26,21 @@ const services = [
   },
 ];
 
-
-
 const ServiceGrid = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <section>
       <div className="grid grid-cols-4 max-md:grid-cols-2 text-white h-[75vh] max-md:h-auto overflow-hidden">
         {services.map((service, index) => (
-          <div key={index} className="relative h-[75vh] max-md:h-80 w-full group">
+          <div
+            key={index}
+            className="relative h-[75vh] max-md:h-80 w-full group"
+            data-aos="fade-in" // AOS animation effect
+            data-aos-delay={index * 100} // Stagger animation
+          >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/45 transition-all"></div>
 
@@ -43,7 +53,7 @@ const ServiceGrid = () => {
 
               {/* Button */}
               <button className="border-2 border-white text-base max-md:text-xs bg-transparent p-3 px-5 font-semibold max-md:w-[7.5rem] hover:bg-white hover:text-black transition-all">
-              View Details
+                View Details
               </button>
             </div>
 
