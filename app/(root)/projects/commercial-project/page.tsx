@@ -13,11 +13,11 @@ export default function HotelsRestaurantsProjects() {
       details:
         "The King Abdullah Civic Center is a landmark project that enhances community services and engagement. In collaboration with AI Architecture LLC (USA) and Zuhair Fayez Partnership (KSA), our team delivered comprehensive design and engineering services. Spanning 630,000 square meters, the center features modern facilities for community events, promoting inclusivity and connectivity while reflecting the cultural values of Dammam.",
       images: [
-        "/community/kingabdulla/picture2.jpg",
-        "/community/kingabdulla/picture3.jpg",
-        "/community/kingabdulla/picture4.jpg",
-        "/community/kingabdulla/picture5.jpg",
-        "/community/kingabdulla/picture6.jpg",
+        "/community/kingabdulla/Picture2.jpg",
+        "/community/kingabdulla/Picture3.jpg",
+        "/community/kingabdulla/Picture4.jpg",
+        "/community/kingabdulla/Picture5.jpg",
+        "/community/kingabdulla/Picture6.jpg",
       ],
     },
     {
@@ -27,11 +27,11 @@ export default function HotelsRestaurantsProjects() {
       details:
         "Suliman Al-Habib Hospital is a modern healthcare facility focused on delivering high-quality medical services. Our construction management ensured compliance with international healthcare standards. The hospital features advanced infrastructure and specialized services designed to enhance patient comfort and operational efficiency, serving as a vital resource for the Riyadh community.",
       images: [
-        "/community/sulaiman/picture7.jpg",
-        "/community/sulaiman/picture8.jpg",
-        "/community/sulaiman/picture10.jpg",
-        "/community/sulaiman/picture9.jpg",
-        "/community/sulaiman/picture11.jpg",
+        "/community/sulaiman/Picture7.jpg",
+        "/community/sulaiman/Picture8.jpg",
+        "/community/sulaiman/Picture10.jpg",
+        "/community/sulaiman/Picture9.jpg",
+        "/community/sulaiman/Picture11.jpg",
       ],
     },
     {

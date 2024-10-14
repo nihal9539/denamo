@@ -12,16 +12,23 @@ const projectCategories = [
     link: "/projects/residential-project",
   },
   {
-    name: "Hotels & Restaurants Projects",
-    image: "/project/Residential-Projects.jpg",
-    featured: false,
-    link: "/projects/hotels-restaurants",
-  },
-  {
     name: "Commercial Projects",
     image: "/project/Commercial-Projects.jpg",
     featured: true,
     link: "/projects/commercial-project",
+  },
+
+  {
+    name: "Industrial Projects",
+    image: "/project/Industrial.jpg",
+    featured: true,
+    link: "/projects/industrial-projects",
+  },
+  {
+    name: "Electromechanical Projects",
+    image: "/project/Electromechanical-1.jpg",
+    featured: false,
+    link: "/projects/electromechanical",
   },
   {
     name: "Educational Projects",
@@ -29,6 +36,19 @@ const projectCategories = [
     featured: false,
     link: "/projects/educational",
   },
+  {
+    name: "Office Projects",
+    image: "/project/Office.jpg",
+    featured: false,
+    link: "/projects/office",
+  },
+  {
+    name: "Hotels & Restaurants Projects",
+    image: "/project/Residential-Projects.jpg",
+    featured: false,
+    link: "/projects/hotels-restaurants",
+  },
+
   {
     name: "Training Facility Projects",
     image: "/project/Training-Facility-Projects.jpg",
@@ -54,12 +74,6 @@ const projectCategories = [
     link: "/projects/mosque",
   },
   {
-    name: "Office Projects",
-    image: "/project/Office.jpg",
-    featured: false,
-    link: "/projects/office",
-  },
-  {
     name: "Gym & Spa Projects",
     image: "/project/spa-gym.jpg",
     featured: false,
@@ -76,18 +90,6 @@ const projectCategories = [
     image: "/project/Landscape-Projects.jpg",
     featured: false,
     link: "/projects/landscape",
-  },
-  {
-    name: "Electromechanical Projects",
-    image: "/project/Electromechanical-1.jpg",
-    featured: false,
-    link: "/projects/electromechanical",
-  },
-  {
-    name: "Industrial Projects",
-    image: "/project/Industrial.jpg",
-    featured: true,
-    link: "/projects/industrial",
   },
 ];
 
@@ -154,30 +156,32 @@ export default function ProjectCategories() {
               key={index}
               className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="relative h-32">
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  fill
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="/path-to-low-resolution-version-of-image.jpg" // Add low-res version
-                />
-              </div>
-              <CardHeader className="p-3">
-                <CardTitle className="text-sm text-center">
-                  {category.name}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-3 pt-0">
-                <Button
-                  variant="link"
-                  className="w-full p-0 h-auto text-xs group"
-                >
-                  View Projects
-                  <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </CardContent>
+              <Link href={category.link}>
+                <div className="relative h-32">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/path-to-low-resolution-version-of-image.jpg" // Add low-res version
+                  />
+                </div>
+                <CardHeader className="p-3">
+                  <CardTitle className="text-sm text-center">
+                    {category.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-3 pt-0">
+                  <Button
+                    variant="link"
+                    className="w-full p-0 h-auto text-xs group"
+                  >
+                    View Projects
+                    <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
