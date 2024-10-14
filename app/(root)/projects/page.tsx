@@ -2,75 +2,95 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const projectCategories = [
   {
     name: "Residential Projects",
     image: "/project/Residential-Projects.jpg",
     featured: true,
+    link: "/projects/residential-project",
   },
   {
     name: "Hotels & Restaurants Projects",
     image: "/project/Residential-Projects.jpg",
     featured: false,
+    link: "/projects/hotels-restaurants",
   },
   {
     name: "Commercial Projects",
     image: "/project/Commercial-Projects.jpg",
     featured: true,
+    link: "/projects/commercial-project",
   },
   {
     name: "Educational Projects",
     image: "/project/Educational-Projects.jpg",
     featured: false,
+    link: "/projects/educational",
   },
   {
     name: "Training Facility Projects",
     image: "/project/Training-Facility-Projects.jpg",
     featured: false,
+    link: "/projects/training-facility",
   },
   {
     name: "Medical Projects",
     image: "/project/Medical-Projects.jpg",
     featured: false,
+    link: "/projects/medical",
   },
   {
     name: "Airports Projects",
     image: "/project/Airports.jpg",
     featured: false,
+    link: "/projects/airports",
   },
   {
     name: "Mosque Design Projects",
     image: "/project/Mosque.jpg",
     featured: false,
+    link: "/projects/mosque",
   },
-  { name: "Office Projects", image: "/project/Office.jpg", featured: false },
+  {
+    name: "Office Projects",
+    image: "/project/Office.jpg",
+    featured: false,
+    link: "/projects/office",
+  },
   {
     name: "Gym & Spa Projects",
     image: "/project/spa-gym.jpg",
     featured: false,
+    link: "/projects/gym-spa",
   },
   {
     name: "Shopping Mall Projects",
     image: "/project/mall-1.jpg",
     featured: false,
+    link: "/projects/shopping-mall",
   },
   {
     name: "Landscape Projects",
     image: "/project/Landscape-Projects.jpg",
     featured: false,
+    link: "/projects/landscape",
   },
   {
     name: "Electromechanical Projects",
     image: "/project/Electromechanical-1.jpg",
     featured: false,
+    link: "/projects/electromechanical",
   },
   {
     name: "Industrial Projects",
     image: "/project/Industrial.jpg",
     featured: true,
+    link: "/projects/industrial",
   },
 ];
+
 export default function ProjectCategories() {
   const featuredCategories = projectCategories.filter(
     (category) => category.featured
@@ -100,28 +120,30 @@ export default function ProjectCategories() {
               key={index}
               className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 col-span-1 md:col-span-2 lg:col-span-1"
             >
-              <div className="relative h-64 md:h-80">
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  fill
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="/path-to-low-resolution-version-of-image.jpg" // Add low-res version
-                />
+              <Link href={category.link}>
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/path-to-low-resolution-version-of-image.jpg" // Add low-res version
+                  />
 
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                  <h2 className="text-3xl font-bold text-white text-center px-4">
-                    {category.name}
-                  </h2>
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <h2 className="text-3xl font-bold text-white text-center px-4">
+                      {category.name}
+                    </h2>
+                  </div>
                 </div>
-              </div>
-              <CardContent className="flex-grow flex items-end justify-center p-6">
-                <Button className="group">
-                  Explore {category.name}
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </CardContent>
+                <CardContent className="flex-grow flex items-end justify-center p-6">
+                  <Button className="group">
+                    Explore {category.name}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
