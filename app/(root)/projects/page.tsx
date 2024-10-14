@@ -43,23 +43,22 @@ const projectCategories = [
     link: "/projects/office",
   },
   {
+    name: "Medical Projects",
+    image: "/project/Medical-Projects.jpg",
+    featured: false,
+    link: "/projects/medical",
+  },
+  {
     name: "Hotels & Restaurants Projects",
     image: "/project/Residential-Projects.jpg",
     featured: false,
     link: "/projects/hotels-restaurants",
   },
-
   {
     name: "Training Facility Projects",
     image: "/project/Training-Facility-Projects.jpg",
     featured: false,
     link: "/projects/training-facility",
-  },
-  {
-    name: "Medical Projects",
-    image: "/project/Medical-Projects.jpg",
-    featured: false,
-    link: "/projects/medical",
   },
   {
     name: "Airports Projects",
