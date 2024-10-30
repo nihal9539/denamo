@@ -12,7 +12,7 @@ const HeaderWithTitle = ({title}:{title:String}) => {
       className="w-full h-[400px] object-cover"
     />
     <div className="absolute inset-0 flex items-center justify-center">
-      <h1 className="text-2xl md:text-5xl !uppercase lg:text-6xl font-bold text-center text-white shadow-text">
+      <h1 className="text-2xl md:text-5xl !uppercase lg:text-5xl font-bold text-center text-white shadow-text">
         {title}
       </h1>
     </div>

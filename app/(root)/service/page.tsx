@@ -14,8 +14,9 @@ import {
   FaChartLine,
   FaGlobe,
 } from "react-icons/fa";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 import AOS from "aos";
+import ServiceComponents from "@/components/ServiceComponents";
 
 const services = [
   {
@@ -113,20 +114,7 @@ const ServicesList = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 150}
-              className="group flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:bg-gray-700 hover:text-white hover:cursor-pointer transition-all duration-500"
-            >
-              <div className="text-gray-800 text-5xl mb-4 transform transition-transform duration-300 group-hover:text-white group-hover:scale-x-[-1]">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-              <p className="text-gray-600 text-center group-hover:text-gray-300">
-                {service.description}
-              </p>
-            </div>
+           <ServiceComponents service={service} key={index}/>
           ))}
         </div>
       </div>
