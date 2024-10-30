@@ -11,11 +11,23 @@ import "aos/dist/aos.css"; // Import AOS styles
 
 export default function ConstructionProjects() {
   const projects = [
-    { title: "Residential Projects", image: "/project/Residential-Projects.jpg" },
-    { title: "Hotels & Restaurants Projects", image: "/project/Residential-Projects.jpg" },
+    {
+      title: "Residential Projects",
+      image: "/project/Residential-Projects.jpg",
+    },
+    {
+      title: "Hotels & Restaurants Projects",
+      image: "/project/Residential-Projects.jpg",
+    },
     { title: "Commercial Projects", image: "/project/Commercial-Projects.jpg" },
-    { title: "Educational Projects", image: "/project/Educational-Projects.jpg" },
-    { title: "Training Facility Projects", image: "/project/Training-Facility-Projects.jpg" },
+    {
+      title: "Educational Projects",
+      image: "/project/Educational-Projects.jpg",
+    },
+    {
+      title: "Training Facility Projects",
+      image: "/project/Training-Facility-Projects.jpg",
+    },
     { title: "Medical Projects", image: "/project/Medical-Projects.jpg" },
   ];
 
@@ -40,7 +52,7 @@ export default function ConstructionProjects() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               data-aos="fade-up"
-              data-aos-delay={index * 200} // Add delay for staggered animation
+              data-aos-delay={index * 100} // Add delay for staggered animation
             >
               <div className="relative h-64 w-full">
                 <img
@@ -69,7 +81,9 @@ export default function ConstructionProjects() {
                     exit={{ y: "100%" }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
                     <p className="text-sm">Click to view project details</p>
                   </motion.div>
                 )}
@@ -85,7 +99,10 @@ export default function ConstructionProjects() {
           ))}
         </div>
 
-        <div className="grid-cols-1 hidden max-md:grid gap-5" data-aos="fade-up">
+        <div
+          className="grid-cols-1 hidden max-md:grid gap-5"
+          data-aos="fade-up"
+        >
           {projects.map((project, index) => (
             <div key={index}>
               <Card>
@@ -95,7 +112,9 @@ export default function ConstructionProjects() {
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                 />
                 <CardContent className="mt-5">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-sm">Click to view project details</p>
                 </CardContent>
               </Card>
@@ -103,7 +122,11 @@ export default function ConstructionProjects() {
           ))}
         </div>
 
-        <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="600">
+        <div
+          className="mt-12 text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <Link href="/projects">
             <Button size="lg" className="group">
               View All Projects
