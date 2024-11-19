@@ -67,16 +67,16 @@ const projectCategories = [
     link: "/projects/airports",
   },
   {
-    name: "Mosque Design Projects",
+    name: "Mosque Projects",
     image: "/project/Mosque.jpg",
     featured: false,
-    link: "/projects/mosque",
+    link: "/projects/mosque-projects",
   },
   {
     name: "Gym & Spa Projects",
     image: "/project/spa-gym.jpg",
     featured: false,
-    link: "/projects/gym-spa",
+    link: "/projects/gym-and-spa",
   },
   {
     name: "Shopping Mall Projects",
@@ -88,7 +88,7 @@ const projectCategories = [
     name: "Landscape Projects",
     image: "/project/Landscape-Projects.jpg",
     featured: false,
-    link: "/projects/landscape",
+    link: "/projects/landscape-projects",
   },
 ];
 

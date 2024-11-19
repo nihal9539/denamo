@@ -32,7 +32,7 @@ export default function ModernImageGrid({ images }: { images: string[] }) {
         >
           <Image
             src={images[0]}
-            alt="Single Image"
+            alt="Project Images"
             layout="fill"
             objectFit="cover"
             onClick={() => openModal(images[0])} // Open modal on click

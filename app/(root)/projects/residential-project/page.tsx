@@ -49,6 +49,30 @@ export default function ResidentialProject() {
       ],
     },
     {
+      name: "Mr. Khalid Bataweel Residential Buildings  ",
+      work: "Design & Built Projects ",
+      place: "Saudi Arabia",
+      details:
+        "Mr. Khalid Bataweel Residential Buildings in Saudi Arabia, designed and built by our company, exemplify contemporary residential architecture. This project features stylish residential buildings with spacious layouts and premium finishes, catering to luxury living. Each unit includes a generous balcony on the top floor, perfect for enjoying views and outdoor relaxation. The buildings also provide ample ground parking space for residents' convenience, making these residences an excellent choice for those seeking comfort and elegance in a desirable location.",
+      images: [
+        "/residential/MrKhalid/Picture3.png",
+        "/residential/MrKhalid/Picture1.png",
+        "/residential/MrKhalid/Picture2.png",
+      ],
+    },
+    {
+      name: "Apartment Complex for AL-ZAMEL GROUP",
+      work: "Design & Built Projects ",
+      place: "Jeddah, Saudi Arabia ",
+      details:
+        "Mr. Khalid Bataweel Residential Buildings in Saudi Arabia, designed and built by our company, exemplify contemporary residential architecture. This project features stylish residential buildings with spacious layouts and premium finishes, catering to luxury living. Each unit includes a generous balcony on the top floor, perfect for enjoying views and outdoor relaxation. The buildings also provide ample ground parking space for residents' convenience, making these residences an excellent choice for those seeking comfort and elegance in a desirable location.",
+      images: [
+        "/residential/MrKhalid/Picture3.png",
+        "/residential/MrKhalid/Picture1.png",
+        "/residential/MrKhalid/Picture2.png",
+      ],
+    },
+    {
       name: "Private Residence",
       work: "Design & Built Projects ",
       place: "Saudi Arabia",
@@ -208,18 +232,7 @@ export default function ResidentialProject() {
         "/residential/MrBin/Picture3.png",
       ],
     },
-    {
-      name: "Mr. Khalid Bataweel Residential Buildings  ",
-      work: "Design & Built Projects ",
-      place: "Saudi Arabia",
-      details:
-        "Mr. Khalid Bataweel Residential Buildings in Saudi Arabia, designed and built by our company, exemplify contemporary residential architecture. This project features stylish residential buildings with spacious layouts and premium finishes, catering to luxury living. Each unit includes a generous balcony on the top floor, perfect for enjoying views and outdoor relaxation. The buildings also provide ample ground parking space for residents' convenience, making these residences an excellent choice for those seeking comfort and elegance in a desirable location.",
-      images: [
-        "/residential/MrKhalid/Picture3.png",
-        "/residential/MrKhalid/Picture1.png",
-        "/residential/MrKhalid/Picture2.png",
-      ],
-    },
+   
     {
       name: "Private Residence",
       work: "Design & Built Projects ",
