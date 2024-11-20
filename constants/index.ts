@@ -23,10 +23,10 @@ export const links = [
         path: "/projects/training-facility",
       },
       { name: "Airports Projects", path: "/projects/airports" },
-      { name: "Mosque Design Projects", path: "/projects/mosque" },
-      { name: "Gym & Spa Projects", path: "/projects/gym-spa" },
+      { name: "Mosque Design Projects", path: "/projects/mosque-projects" },
+      { name: "Gym & Spa Projects", path: "/projects/gym-and-spa" },
       { name: "Shopping Mall Projects", path: "/projects/shopping-mall" },
-      { name: "Landscape Projects", path: "/projects/landscape" },
+      { name: "Landscape Projects", path: "/projects/landscape-projects" },
     ],
   },
   {
