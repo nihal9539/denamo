@@ -8,20 +8,7 @@ import ProjectSection from "@/components/ProjectSection";
 
 export default function HotelsRestaurantsProjects() {
   const projects = [
-    {
-      name: "King Abdullah Civic Center",
-      work: "Detailed Design & Engineering",
-      place: "DAMMAM,KSA",
-      details:
-        "The King Abdullah Civic Center is a landmark project that enhances community services and engagement. In collaboration with AI Architecture LLC (USA) and Zuhair Fayez Partnership (KSA), our team delivered comprehensive design and engineering services. Spanning 630,000 square meters, the center features modern facilities for community events, promoting inclusivity and connectivity while reflecting the cultural values of Dammam.",
-      images: [
-        "/community/kingabdulla/Picture2.jpg",
-        "/community/kingabdulla/Picture3.jpg",
-        "/community/kingabdulla/Picture4.jpg",
-        "/community/kingabdulla/Picture5.jpg",
-        "/community/kingabdulla/Picture6.jpg",
-      ],
-    },
+   
     {
       name: "Suliman Al-Habib Hospital",
       work: "Construction Projects",
@@ -92,20 +79,7 @@ export default function HotelsRestaurantsProjects() {
         "/community/dome/Picture31.png",
       ],
     },
-    {
-      name: "Al- Mokhtar Shopping Center",
-      work: "Design & Built Projects",
-      place: "Jeddah, Saudi Arabia  ",
-      details:
-        "This project involves the design and construction of the Al-Mokhtar Shopping Center, located in Jeddah, KSA. The center spans an area of 15,000 square meters, featuring modern retail spaces, entertainment options, and dining facilities to enhance the shopping experience.",
-      images: [
-        "/community/Al- Mokhtar/Picture33.png",
-        "/community/Al- Mokhtar/Picture34.png",
-        "/community/Al- Mokhtar/Picture35.png",
-        "/community/Al- Mokhtar/Picture36.png",
-        "/community/Al- Mokhtar/Picture37.png",
-      ],
-    },
+
     {
       name: "Commercial Strip Mall",
       work: "Design & Built Projects",

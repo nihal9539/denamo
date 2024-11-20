@@ -103,6 +103,24 @@ export default function OfficeProjects() {
         "/office/NationalBank/Picture8.png",
       ],
     },
+    {
+      name: "BAB JEDDAH Project with EMMAR & Zuhair Fayez Partnership",
+      work: "Design & Built Projects",
+      place: "Jeddah, Saudi Arabia  ",
+      details: "In collaboration with EMMAR and Zuhair Fayez Partnership, we delivered the prestigious BAB JEDDAH project in Jeddah, Saudi Arabia. Our team managed the design and build of this modern office complex, featuring striking glass facades, functional layouts, and landscaped spaces with elegant fountains. We ensured every aspect of the project met the highest standards of innovation, sustainability, and aesthetics, creating a vibrant hub for business and community activities. This project stands as a testament to our commitment to delivering excellence in large-scale developments.",
+      images: [
+          "/office/bab-jeddah/Picture1.jpeg",
+      ],
+    },
+    {
+      name: " ESAR Group HQ Office Building, Jeddah, KSA",
+      work: "Design & Built Projects",
+      place: "Jeddah, Saudi Arabia  ",
+      details: "This project showcases the design and construction of the ESAR Group Headquarters Office Building in Jeddah, Saudi Arabia. The building features a modern architectural style with sleek facades, innovative structural elements, and a functional layout. Designed to reflect the identity of the ESAR Group, the headquarters integrates state-of-the-art materials and sustainable design principles to create a landmark office space in the region.",
+      images: [
+          "/office/esar-group/Picture1.jpeg",
+      ],
+    },
   ];
 
   return (

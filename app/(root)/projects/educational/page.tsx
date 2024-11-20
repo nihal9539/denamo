@@ -1,8 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import { motion } from "framer-motion";
-import ImageGallery from "@/components/ImageGallery";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 import ProjectSection from "@/components/ProjectSection";
 
@@ -25,6 +21,24 @@ export default function EducationalProjects() {
         "/Educational/Swedish/Picture8.png",
         "/Educational/Swedish/Picture9.png",
         "/Educational/Swedish/Picture10.png",
+      ],
+    },
+    {
+      name: "King Khalid University in BISHA",
+      work: "Design & Built Projects",
+      place: "BISHA, Saudi Arabia  ",
+      details:"",
+      images: [
+        "/Educational/king-khalid/Picture1.jpeg",
+        "/Educational/king-khalid/Picture2.jpeg",
+        "/Educational/king-khalid/Picture3.jpeg",
+        "/Educational/king-khalid/Picture4.jpeg",
+        "/Educational/king-khalid/Picture5.jpeg",
+        "/Educational/king-khalid/Picture6.jpeg",
+        "/Educational/king-khalid/Picture7.jpeg",
+        "/Educational/king-khalid/Picture8.jpeg",
+        "/Educational/king-khalid/Picture9.jpeg",
+        "/Educational/king-khalid/Picture10jpegg",
       ],
     },
     {
