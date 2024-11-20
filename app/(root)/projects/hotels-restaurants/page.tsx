@@ -181,7 +181,8 @@ export default function EducationalProjects() {
       name: "Conference spaces for ARAMCO",
       work: " Interior Design Projects",
       place: "Dammam, KSA",
-      details: "",
+      details:
+        "The Conference Spaces for ARAMCO in Dammam, KSA, feature state-of-the-art interior design tailored to accommodate high-profile events and corporate gatherings. The design blends functionality with aesthetic appeal, incorporating premium materials and advanced lighting solutions for an engaging atmosphere. With spacious seating arrangements, acoustically optimized spaces, and modern decor elements, the conference halls provide a professional yet inviting setting. These spaces are a reflection of ARAMCO’s commitment to excellence and innovation in their facilities.",
       images: [
         "/hotel/conference-aramco/Picture1.jpeg",
         "/hotel/conference-aramco/Picture2.jpeg",
@@ -192,7 +193,8 @@ export default function EducationalProjects() {
       name: "The Empress Hotel",
       work: " Design & Built Projects",
       place: "Chicago, IL. USA",
-      details: "",
+      details:
+        "The Empress Hotel in Chicago, Illinois, stands as a masterpiece of aesthetic interior design. Every corner of the hotel reflects elegance, blending modern luxury with timeless charm. From the intricately crafted furniture to the soothing color palettes, each element is designed to create an atmosphere of serenity and sophistication. Guests are welcomed with stunning lobby spaces, artistically lit corridors, and rooms adorned with bespoke decor and textures that define comfort and style. This hotel is a haven for those who appreciate fine details and artistic interiors.",
       images: [
         "/hotel/empress/Picture1.jpeg",
         "/hotel/empress/Picture2.jpeg",
@@ -206,48 +208,63 @@ export default function EducationalProjects() {
     {
       name: " The Silver Legacy Hotel",
       work: " Design & Built Projects",
-      place: " Reno, NV. USA",
-      details: "",
-      images: [ "/hotel/silver-legancy-hotel/Picture1.jpeg",
+      place: " Reno, NV, USA",
+      details:
+        "The Silver Legacy Hotel in Reno, Nevada, is a stunning example of innovative design and luxurious hospitality. Situated in the heart of the city, this hotel combines modern aesthetics with a touch of vintage charm. The interiors feature carefully curated elements, including elegant lighting, plush furnishings, and unique architectural details that create an inviting atmosphere. Guests can enjoy world-class amenities, spacious accommodations, and breathtaking views of the surrounding mountains, making it a premier destination for travelers seeking comfort and style.",
+
+      images: [
+        "/hotel/silver-legancy-hotel/Picture1.jpeg",
         "/hotel/silver-legancy-hotel/Picture2.jpeg",
-        "/hotel/silver-legancy-hotel/Picture3.jpeg",],
+        "/hotel/silver-legancy-hotel/Picture3.jpeg",
+      ],
     },
     {
       name: "The DRAKE Hotel",
       work: " Design & Built Projects",
-      place: " Reno, NV. USA",
-      details: "",
-      images: [ "/hotel/the-drake/Picture1.jpeg",
+      place: "Chicago, IL. USA",
+      details:
+        "The DRAKE Hotel in Chicago, Illinois, is an iconic establishment that embodies timeless elegance and architectural excellence. Located in one of the most vibrant cities in the world, the hotel offers a unique blend of historic charm and modern luxury. Guests are welcomed by exquisitely designed interiors, featuring rich textures, opulent finishes, and meticulous attention to detail. From its luxurious suites to its sophisticated common areas, The DRAKE Hotel is a symbol of Chicago’s grand hospitality tradition, providing a memorable experience for every guest.",
+
+      images: [
+        "/hotel/the-drake/Picture1.jpeg",
         "/hotel/the-drake/Picture2.jpeg",
-     ],
+      ],
     },
 
     {
       name: "The Teamsters Building",
       work: "Design & Built Projects",
       place: "Chicago, IL. USA",
-      details: "",
-      images: [ "/hotel/teamsters/Picture1.jpeg",
+      details:
+        "The Teamsters Building in Chicago, Illinois, is a testament to architectural innovation and functional design. This landmark project combines modern aesthetics with robust construction, reflecting its significance as a cornerstone of the community. The interiors are designed to provide a harmonious blend of practicality and style, featuring spacious layouts, high-quality materials, and attention to every detail. Located in a bustling urban environment, the building serves as a hub for collaboration and productivity, making it an exemplary addition to Chicago’s architectural landscape.",
+      images: [
+        "/hotel/teamsters/Picture1.jpeg",
         "/hotel/teamsters/Picture2.jpeg",
-      ,],
+        ,
+      ],
     },
     {
       name: " Casablanca Restaurant",
       work: "Design & Built Projects",
       place: "Chicago, IL. USA",
-      details: "",
-      images: [ "/hotel/casablanca/Picture1.jpeg",
+      details: "Casablanca Restaurant in Chicago, Illinois, offers a unique dining experience that combines exotic elegance with modern charm. Inspired by the timeless allure of Morocco, the restaurant’s interiors are a fusion of rich textures, warm colors, and intricate patterns that transport guests to a world of luxury and intimacy. From the beautifully crafted furnishings to the ambient lighting, every detail is thoughtfully designed to create a memorable atmosphere. Guests can enjoy exquisite cuisine in an inviting space that celebrates both tradition and contemporary flair."
+,
+      images: [
+        "/hotel/casablanca/Picture1.jpeg",
         "/hotel/casablanca/Picture2.jpeg",
-        ],
+      ],
     },
     {
       name: "Sir Francis Drake Hotel",
       work: " Interior Design Projects",
       place: "St. Francisco, CA. USA",
-      details: "",
-      images: [ "/hotel/francis-drake/Picture1.jpeg",
+      details: "The Sir Francis Drake Hotel in San Francisco, California, blends historic grandeur with modern sophistication. Located in the heart of the city, this iconic hotel is renowned for its luxurious interiors, featuring a blend of classic and contemporary design elements. The elegant decor showcases a rich palette of colors, opulent textures, and stylish furnishings, offering guests an exceptional experience. With its refined ambiance and exceptional service, the Sir Francis Drake Hotel remains a prestigious destination for travelers seeking both comfort and style in one of America's most dynamic cities."
+,
+      images: [
+        "/hotel/francis-drake/Picture1.jpeg",
         "/hotel/francis-drake/Picture2.jpeg",
-        "/hotel/francis-drake/Picture3.jpeg",],
+        "/hotel/francis-drake/Picture3.jpeg",
+      ],
     },
   ];
 
