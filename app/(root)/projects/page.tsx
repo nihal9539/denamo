@@ -55,12 +55,6 @@ const projectCategories = [
     link: "/projects/hotels-restaurants",
   },
   {
-    name: "Training Facility Projects",
-    image: "/project/Training-Facility-Projects.jpg",
-    featured: false,
-    link: "/projects/training-facility",
-  },
-  {
     name: "Airports Projects",
     image: "/project/Airports.jpg",
     featured: false,

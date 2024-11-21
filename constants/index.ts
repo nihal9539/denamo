@@ -18,10 +18,6 @@ export const links = [
         name: "Hotels & Restaurants Projects",
         path: "/projects/hotels-restaurants",
       },
-      {
-        name: "Training Facility Projects",
-        path: "/projects/training-facility",
-      },
       { name: "Airports Projects", path: "/projects/airports" },
       { name: "Mosque Design Projects", path: "/projects/mosque-projects" },
       { name: "Gym & Spa Projects", path: "/projects/gym-and-spa" },
