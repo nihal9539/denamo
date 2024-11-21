@@ -37,7 +37,7 @@ export default function FurnitureManufacturing() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/design/furniture-manufacturing.jpg"
+                src='/service/furniture manufacturing.jpg'
                 alt="Furniture Manufacturing"
                 layout="fill"
                 objectFit="cover"

@@ -36,7 +36,7 @@ export default function EnvironmentalTrafficAssessments() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/design/environmental-traffic.jpg"
+                src='/service/Environmental & Traffic Impact Assessments.jpg'
                 alt="Environmental & Traffic Assessments"
                 layout="fill"
                 objectFit="cover"

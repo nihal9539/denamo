@@ -37,7 +37,7 @@ export default function ArchitecturalEngineeringDesign() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/design/architectural-engineering.jpg"
+                src='/service/Architectural & Engineering Design.jpg'
                 alt="Architectural Engineering Design"
                 layout="fill"
                 objectFit="cover"

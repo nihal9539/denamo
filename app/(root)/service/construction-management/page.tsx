@@ -42,7 +42,7 @@ export default function ConstructionManagement() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/construction-management/img.jpg"
+                src='/service/Construction Management.jpg'
                 alt="Construction Management"
                 layout="fill"
                 objectFit="cover"

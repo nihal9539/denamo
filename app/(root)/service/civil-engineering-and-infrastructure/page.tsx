@@ -44,7 +44,7 @@ export default function CivilEngineeringInfrastructure() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/service/Civil Engineering Infrastructure.jpg"
+                src='/about/02.jpg'
                 alt="Civil Engineering Infrastructure"
                 layout="fill"
                 objectFit="cover"
