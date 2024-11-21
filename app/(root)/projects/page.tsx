@@ -50,7 +50,7 @@ const projectCategories = [
   },
   {
     name: "Hotels & Restaurants Projects",
-    image: "/project/Residential-Projects.jpg",
+    image: "/project/hotel.jpg",
     featured: false,
     link: "/projects/hotels-restaurants",
   },

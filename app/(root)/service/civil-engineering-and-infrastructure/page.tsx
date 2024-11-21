@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ClipboardList,
-  Cog,
-  Eye,
-  Wrench,
-  Home,
+  Hammer,
+  Shield,
   Building,
-  Lightbulb,
-  Leaf,
+  Truck,
+  Layers,
+//   Toolbox,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,24 +18,25 @@ import {
 } from "@/components/ui/card";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 
-export default function InteriorDesign() {
+export default function CivilEngineeringInfrastructure() {
   return (
     <div className="bg-white min-h-screen">
-      <HeaderWithTitle image={'/service/Interiar-design.png'} title={"interior design"} />
+      <HeaderWithTitle image={'/service/Civil Engineering Infrastructure.jpg'} title={"Civil Engineering & Infrastructure"} />
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <section className="mb-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-                Transform Your Space
+                Building the Foundations for Tomorrow
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                At Delano, we believe that every space has the
-                potential to inspire and reflect individuality. Our interior
-                design services are tailored to transform residential and
-                commercial environments into functional, aesthetic havens that
-                enhance your lifestyle and meet your needs.
+                At Delano, we specialize in civil engineering
+                infrastructure projects that are the backbone of modern
+                development. From transportation networks to utilities, our
+                expertise ensures the successful completion of large-scale
+                projects that meet safety, functionality, and sustainability
+                standards.
               </p>
               <Button asChild size="lg">
                 <Link href="/contact">Get Started</Link>
@@ -45,8 +44,8 @@ export default function InteriorDesign() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/community/img.jpg"
-                alt="Elegant interior design"
+                src="/service/Civil Engineering Infrastructure.jpg"
+                alt="Civil Engineering Infrastructure"
                 layout="fill"
                 objectFit="cover"
                 className="transition-transform duration-300 hover:scale-105"
@@ -62,28 +61,28 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: ClipboardList,
-                title: "Personalized Consultation",
+                icon: Hammer,
+                title: "Detailed Planning",
                 description:
-                  "We start with a comprehensive consultation to understand your vision, preferences, and requirements.",
+                  "We begin each project with thorough planning and precise execution strategies to ensure project success.",
               },
               {
-                icon: Eye,
-                title: "Concept Development",
+                icon: Shield,
+                title: "Safety First",
                 description:
-                  "We create customized design concepts that include color palettes, furniture selection, and spatial layouts.",
+                  "Our commitment to safety ensures that every phase of construction meets the highest safety standards.",
               },
               {
-                icon: Cog,
-                title: "3D Visualization",
-                description:
-                  "We provide stunning 3D renderings of your space to help you envision the final outcome.",
-              },
-              {
-                icon: Wrench,
+                icon: Building,
                 title: "Project Management",
                 description:
-                  "We oversee every aspect of the design process, ensuring smooth execution and timely completion.",
+                  "From concept to completion, we manage every aspect of the infrastructure development process.",
+              },
+              {
+                icon: Truck,
+                title: "Logistics & Transport",
+                description:
+                  "We handle the logistical challenges to ensure materials and equipment are delivered on time and within budget.",
               },
             ].map((item, index) => (
               <Card key={index}>
@@ -106,40 +105,40 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Home,
-                title: "Residential Design",
+                icon: Layers,
+                title: "Road & Highway Construction",
                 description:
-                  "Transform your home into a personalized sanctuary.",
+                  "Design and construction of roads, highways, and bridges for seamless transportation.",
               },
               {
                 icon: Building,
-                title: "Commercial Design",
+                title: "Structural Engineering",
                 description:
-                  "Create inspiring workspaces for productivity and brand representation.",
+                  "We offer structural solutions for buildings, foundations, and other infrastructure projects.",
               },
               {
-                icon: ClipboardList,
-                title: "Space Planning",
+                icon: Layers,
+                title: "Utility Systems",
                 description:
-                  "Optimize your layout for maximum functionality and flow.",
+                  "We design and implement utility infrastructure, including water, sewage, and power systems.",
               },
               {
-                icon: Wrench,
-                title: "Furniture & Decor",
+                icon: Hammer,
+                title: "Land Development",
                 description:
-                  "Select and arrange furnishings that complement your style and space.",
+                  "Transform raw land into usable, accessible spaces for construction, commercial use, and more.",
               },
               {
-                icon: Lightbulb,
-                title: "Lighting Design",
+                icon: Shield,
+                title: "Environmental Engineering",
                 description:
-                  "Enhance ambiance and functionality with strategic lighting solutions.",
+                  "We integrate environmental considerations into every project, ensuring sustainability and minimal impact.",
               },
               {
-                icon: Leaf,
-                title: "Sustainable Design",
+                icon: Truck,
+                title: "Construction Logistics",
                 description:
-                  "Incorporate eco-friendly practices and materials in your space.",
+                  "We handle transportation, material procurement, and on-site logistics for large-scale infrastructure projects.",
               },
             ].map((service, index) => (
               <div
@@ -167,24 +166,24 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Experienced Designers",
+                title: "Experienced Engineers",
                 description:
-                  "Our team of skilled professionals brings years of expertise to every project.",
+                  "Our engineers have decades of combined experience in delivering large-scale infrastructure projects.",
               },
               {
-                title: "Client-Centric Approach",
+                title: "On-Time Delivery",
                 description:
-                  "We prioritize your vision and work closely with you throughout the design process.",
+                  "We pride ourselves on our ability to deliver projects on time, with meticulous attention to deadlines.",
               },
               {
-                title: "Quality Assurance",
+                title: "Sustainability & Innovation",
                 description:
-                  "We maintain high standards in every aspect of our design and execution.",
+                  "We incorporate the latest sustainable technologies and practices to ensure environmentally friendly solutions.",
               },
               {
-                title: "Sustainability Focus",
+                title: "Full Project Lifecycle",
                 description:
-                  "We incorporate eco-friendly practices and materials in our designs.",
+                  "We manage projects from start to finish, including design, construction, and maintenance phases.",
               },
             ].map((item, index) => (
               <Card key={index} className="bg-gray-50">
@@ -201,12 +200,12 @@ export default function InteriorDesign() {
 
         <section id="contact" className="text-center">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-            Ready to Transform Your Space?
+            Ready to Build the Future?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Let us bring your vision to life! Contact us today to schedule your
-            consultation and explore how our interior design services can
-            elevate your environment.
+            Let us bring your infrastructure project to life! Contact us today
+            to schedule a consultation and learn how our civil engineering
+            services can help you build for tomorrow.
           </p>
           <Button asChild size="lg">
             <Link href="/contact">Contact Us</Link>

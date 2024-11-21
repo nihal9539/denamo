@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-const HeaderWithTitle = ({title}:{title:String}) => {
+const HeaderWithTitle = ({title,image}:{title:String,image:any}) => {
   return (
     <div className="w-full relative">
     <Image
-      src="/community/img.jpg"
+      src={image}
       alt="Projects Banner"
       width={1920}
       height={400}

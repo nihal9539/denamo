@@ -1,8 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 const ServiceComponents = ({service}:{service:any}) => {
   return (
-    <div
+    <Link 
+    href={service?.path}
     data-aos="fade-up"
     className="group flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:bg-gray-700 hover:text-white hover:cursor-pointer transition-all duration-500"
   >
@@ -13,7 +15,7 @@ const ServiceComponents = ({service}:{service:any}) => {
     <p className="text-gray-600 text-center group-hover:text-gray-300">
       {service.description}
     </p>
-  </div>  )
+  </Link>  )
 }
 
 export default ServiceComponents

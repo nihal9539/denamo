@@ -1,8 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import ImageGallery from "@/components/ImageGallery";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 import ProjectSection from "@/components/ProjectSection";
 
@@ -42,7 +39,7 @@ export default function Electromechanical() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle title={"Electromechanical projects"} />
+      <HeaderWithTitle image={"/project/Electromechanical-1.jpg"} title={"Electromechanical projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

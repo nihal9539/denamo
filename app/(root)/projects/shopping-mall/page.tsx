@@ -52,7 +52,7 @@ export default function ShoppingMallProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle title={"Shopping Mall projects"} />
+      <HeaderWithTitle image={"/project/mall-1.jpg"} title={"Shopping Mall projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

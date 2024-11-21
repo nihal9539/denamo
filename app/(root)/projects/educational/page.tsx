@@ -88,7 +88,7 @@ export default function EducationalProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle title={"Educational projects"} />
+      <HeaderWithTitle image={"/project/Educational-Projects.jpg"} title={"Educational projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

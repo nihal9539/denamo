@@ -35,7 +35,7 @@ export const links = [
       { name: "All", path: "/service" },
       {
         name: "Architectural & Engineering Design",
-        path: "/service/architectural-engineering-design",
+        path: "/service/architectural-and-engineering-design",
       },
       { name: "Interior Design", path: "/service/interior-design" },
       {
@@ -57,7 +57,7 @@ export const links = [
       },
       {
         name: "Civil Engineering & Infrastructure",
-        path: "/service/civil-engineering-infrastructure",
+        path: "/service/civil-engineering-and-infrastructure",
       },
       {
         name: "Sustainable & Green Building Design",
@@ -69,7 +69,7 @@ export const links = [
       },
       {
         name: "Master & Urban Planning",
-        path: "/service/master-urban-planning",
+        path: "/service/master-and-urban-planning",
       },
       {
         name: "Topographical & Geotechnical Surveys",
@@ -77,7 +77,7 @@ export const links = [
       },
       {
         name: "Environmental & Traffic Impact Assessments",
-        path: "/service/environmental-traffic-impact-assessments",
+        path: "/service/environmental-and-traffic-impact-assessments",
       },
     ],
   },

@@ -9,6 +9,7 @@ import {
   LuBuilding2,
 } from "react-icons/lu";
 import { IoCubeOutline } from "react-icons/io5";
+const BIMImage  = "./service/Building-Information-Modeli.png"
 
 interface CapabilityCardProps {
   icon: React.ReactNode;
@@ -48,7 +49,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text }) => (
 const BIMServices: React.FC = () => {
   return (
     <section className="text-gray-900">
-      <HeaderWithTitle title="Building Information Modeling (BIM) Services" />
+      <HeaderWithTitle image={`/service/Building-Information-Modeli.png`} title="Building Information Modeling (BIM) Services" />
 
       <div className="max-w-7xl mx-auto pt-10">
   <h1 className="text-4xl font-extrabold mb-4">

@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ClipboardList,
-  Cog,
-  Eye,
-  Wrench,
-  Home,
-  Building,
-  Lightbulb,
-  Leaf,
+//   ClipboardCheck,
+  Briefcase,
+  HardHat,
+  ClipboardCheck,
+  Ruler,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,24 +17,24 @@ import {
 } from "@/components/ui/card";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 
-export default function InteriorDesign() {
+export default function ConstructionManagement() {
   return (
     <div className="bg-white min-h-screen">
-      <HeaderWithTitle image={'/service/Interiar-design.png'} title={"interior design"} />
+      <HeaderWithTitle image={'/service/Construction Management.jpg'} title={"Construction Management"} />
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <section className="mb-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-                Transform Your Space
+                Managing Projects, Building Excellence
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                At Delano, we believe that every space has the
-                potential to inspire and reflect individuality. Our interior
-                design services are tailored to transform residential and
-                commercial environments into functional, aesthetic havens that
-                enhance your lifestyle and meet your needs.
+                At Delano, we offer end-to-end construction
+                management services to ensure your project is completed on time,
+                within budget, and to the highest standards of quality. Our
+                team coordinates every phase of construction with efficiency and
+                transparency.
               </p>
               <Button asChild size="lg">
                 <Link href="/contact">Get Started</Link>
@@ -45,8 +42,8 @@ export default function InteriorDesign() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/community/img.jpg"
-                alt="Elegant interior design"
+                src="/construction-management/img.jpg"
+                alt="Construction Management"
                 layout="fill"
                 objectFit="cover"
                 className="transition-transform duration-300 hover:scale-105"
@@ -62,28 +59,28 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: ClipboardList,
-                title: "Personalized Consultation",
+                icon: ClipboardCheck,
+                title: "Comprehensive Planning",
                 description:
-                  "We start with a comprehensive consultation to understand your vision, preferences, and requirements.",
+                  "We provide detailed planning and feasibility studies to align project goals with your vision.",
               },
               {
-                icon: Eye,
-                title: "Concept Development",
+                icon: Briefcase,
+                title: "Contract Administration",
                 description:
-                  "We create customized design concepts that include color palettes, furniture selection, and spatial layouts.",
+                  "Our team handles contracts, ensuring compliance and smooth operations at every step.",
               },
               {
-                icon: Cog,
-                title: "3D Visualization",
+                icon: HardHat,
+                title: "On-Site Coordination",
                 description:
-                  "We provide stunning 3D renderings of your space to help you envision the final outcome.",
+                  "We oversee construction activities, resolving issues and ensuring seamless execution.",
               },
               {
-                icon: Wrench,
-                title: "Project Management",
+                icon: Ruler,
+                title: "Quality Control",
                 description:
-                  "We oversee every aspect of the design process, ensuring smooth execution and timely completion.",
+                  "Strict adherence to quality standards ensures your project is built to last.",
               },
             ].map((item, index) => (
               <Card key={index}>
@@ -106,40 +103,40 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Home,
-                title: "Residential Design",
+                icon: ClipboardCheck,
+                title: "Pre-Construction Planning",
                 description:
-                  "Transform your home into a personalized sanctuary.",
+                  "We assist with budgeting, scheduling, and risk management during the pre-construction phase.",
               },
               {
-                icon: Building,
-                title: "Commercial Design",
+                icon: ClipboardCheck,
+                title: "Construction Supervision",
                 description:
-                  "Create inspiring workspaces for productivity and brand representation.",
+                  "Continuous monitoring ensures projects adhere to timelines and budgets.",
               },
               {
-                icon: ClipboardList,
-                title: "Space Planning",
+                icon: HardHat,
+                title: "Safety Management",
                 description:
-                  "Optimize your layout for maximum functionality and flow.",
+                  "We prioritize safety to create secure environments for workers and stakeholders.",
               },
               {
-                icon: Wrench,
-                title: "Furniture & Decor",
+                icon: Briefcase,
+                title: "Procurement Management",
                 description:
-                  "Select and arrange furnishings that complement your style and space.",
+                  "Our procurement team ensures timely delivery of high-quality materials and equipment.",
               },
               {
-                icon: Lightbulb,
-                title: "Lighting Design",
+                icon: Ruler,
+                title: "Cost Control",
                 description:
-                  "Enhance ambiance and functionality with strategic lighting solutions.",
+                  "Effective cost management ensures financial efficiency throughout the project lifecycle.",
               },
               {
-                icon: Leaf,
-                title: "Sustainable Design",
+                icon: ClipboardCheck,
+                title: "Post-Construction Services",
                 description:
-                  "Incorporate eco-friendly practices and materials in your space.",
+                  "We provide inspection, commissioning, and project handover services.",
               },
             ].map((service, index) => (
               <div
@@ -167,24 +164,24 @@ export default function InteriorDesign() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Experienced Designers",
+                title: "Expert Team",
                 description:
-                  "Our team of skilled professionals brings years of expertise to every project.",
+                  "Our experienced professionals excel in all facets of construction management.",
               },
               {
-                title: "Client-Centric Approach",
+                title: "Transparent Process",
                 description:
-                  "We prioritize your vision and work closely with you throughout the design process.",
+                  "We maintain open communication with clients for seamless collaboration.",
               },
               {
-                title: "Quality Assurance",
+                title: "Efficient Execution",
                 description:
-                  "We maintain high standards in every aspect of our design and execution.",
+                  "We ensure projects are completed on time without compromising quality.",
               },
               {
-                title: "Sustainability Focus",
+                title: "Cutting-Edge Tools",
                 description:
-                  "We incorporate eco-friendly practices and materials in our designs.",
+                  "We leverage modern tools and technology to optimize every construction phase.",
               },
             ].map((item, index) => (
               <Card key={index} className="bg-gray-50">
@@ -201,12 +198,12 @@ export default function InteriorDesign() {
 
         <section id="contact" className="text-center">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-            Ready to Transform Your Space?
+            Build Your Dream Project Today
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Let us bring your vision to life! Contact us today to schedule your
-            consultation and explore how our interior design services can
-            elevate your environment.
+            Ready to bring your vision to life? Contact us to learn more about
+            our construction management services and how we can assist in
+            delivering your project successfully.
           </p>
           <Button asChild size="lg">
             <Link href="/contact">Contact Us</Link>

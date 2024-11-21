@@ -1,11 +1,5 @@
-"use client";
-
-import Image from "next/image";
-import { motion } from "framer-motion";
-import ImageGallery from "@/components/ImageGallery";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 import ProjectSection from "@/components/ProjectSection";
-
 export default function HotelsRestaurantsProjects() {
   const projects = [
    
@@ -152,7 +146,7 @@ export default function HotelsRestaurantsProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-     <HeaderWithTitle title={'COMMERCIAL PROJECTS'}/>
+     <HeaderWithTitle image={"/project/Commercial-Projects.jpg"} title={'COMMERCIAL PROJECTS'}/>
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
         {projects.map((project, index) => (

@@ -14,22 +14,35 @@ export default function ConstructionProjects() {
     {
       title: "Residential Projects",
       image: "/project/Residential-Projects.jpg",
+      path: "/projects/residential-project",
     },
     {
       title: "Hotels & Restaurants Projects",
-      image: "/project/Residential-Projects.jpg",
+      image: "/project/hotel.jpg",
+      path: "/projects/hotels-restaurants",
     },
-    { title: "Commercial Projects", image: "/project/Commercial-Projects.jpg" },
+    {
+      title: "Commercial Projects",
+      image: "/project/Commercial-Projects.jpg",
+      path: "/projects/commercial-project",
+    },
     {
       title: "Educational Projects",
       image: "/project/Educational-Projects.jpg",
+      path: "/projects/educational",
     },
     {
-      title: "Training Facility Projects",
-      image: "/project/Training-Facility-Projects.jpg",
+      title: "Airports Projects",
+      image: "/project/Airports.jpg",
+      path: "/projects/airports",
     },
-    { title: "Medical Projects", image: "/project/Medical-Projects.jpg" },
+    {
+      title: "Medical Projects",
+      image: "/project/Medical-Projects.jpg",
+      path: "/projects/medical",
+    },
   ];
+  
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -54,7 +67,7 @@ export default function ConstructionProjects() {
               data-aos="fade-up"
               data-aos-delay={index * 100} // Add delay for staggered animation
             >
-              <div className="relative h-64 w-full">
+              <Link href={project.path} className="relative h-64 w-full">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -71,7 +84,7 @@ export default function ConstructionProjects() {
                     />
                   )}
                 </AnimatePresence>
-              </div>
+              </Link>
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.div
