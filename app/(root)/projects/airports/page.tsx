@@ -35,7 +35,9 @@ const projects = [
     ],
   },
 ];
-const page = () => {
+const page = async() => {
+  await new Promise(resolve => setTimeout(resolve,2000))
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <HeaderWithTitle image={'/project/Airports.jpg'} title={"Airport Projects"} />

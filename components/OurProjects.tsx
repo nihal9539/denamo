@@ -117,7 +117,7 @@ export default function ConstructionProjects() {
           data-aos="fade-up"
         >
           {projects.map((project, index) => (
-            <div key={index}>
+            <Link href={project.path} key={index}>
               <Card>
                 <img
                   src={project.image}
@@ -131,7 +131,7 @@ export default function ConstructionProjects() {
                   <p className="text-sm">Click to view project details</p>
                 </CardContent>
               </Card>
-            </div>
+            </Link>
           ))}
         </div>
 

@@ -24,10 +24,10 @@ const services = [
     path: "/service/building-information-modeling",
   },
   {
-    title: "Residential",
-    description: "Modern homes designed to enhance comfort, lifestyle, and personal well-being.",
+    title: "Constriction",
+    description: "Expert management of construction projects from start to finish, ensuring efficiency, cost-effectiveness, and quality control.",
     image: "/service/2.jpg",
-    path: "/service/turnkey-projects",
+    path: "/service/construction-management",
   },
 ];
 
