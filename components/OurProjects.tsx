@@ -48,7 +48,7 @@ export default function ConstructionProjects() {
 
   // Initialize AOS
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true ,offset: 100});
   }, []);
 
   return (
@@ -65,7 +65,7 @@ export default function ConstructionProjects() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               data-aos="fade-up"
-              data-aos-delay={index * 100} // Add delay for staggered animation
+              data-aos-delay={index * 50} // Add delay for staggered animation
             >
               <Link href={project.path} className="relative h-64 w-full">
                 <img
@@ -138,7 +138,7 @@ export default function ConstructionProjects() {
         <div
           className="mt-12 text-center"
           data-aos="fade-up"
-          data-aos-delay="100"
+          data-aos-delay="50"
         >
           <Link href="/projects">
             <Button size="lg" className="group">

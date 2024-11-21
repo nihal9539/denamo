@@ -2,29 +2,35 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Link from "next/link";
 
 const services = [
   {
     title: "Architectural",
     description: "Creative designs merging beauty and functionality to support future growth.",
     image: "/service/1.jpg",
+    path: "/service/architectural-and-engineering-design",
   },
   {
     title: "Interior Design",
     description: "Elegant interiors crafted for comfort, style, and seamless living experiences.",
     image: "/service/6.jpg",
+    path: "/service/interior-design",
   },
   {
     title: "BIM",
     description: "Data-driven solutions for efficient building planning, design, and management.",
     image: "/service/4.jpg",
+    path: "/service/building-information-modeling",
   },
   {
     title: "Residential",
     description: "Modern homes designed to enhance comfort, lifestyle, and personal well-being.",
     image: "/service/2.jpg",
+    path: "/service/turnkey-projects",
   },
 ];
+
 
 const ServiceGrid = () => {
   useEffect(() => {
@@ -35,7 +41,8 @@ const ServiceGrid = () => {
     <section>
       <div className="grid grid-cols-4 max-md:grid-cols-2 text-white h-[75vh] max-md:h-auto overflow-hidden">
         {services.map((service, index) => (
-          <div
+          <Link
+          href={service.path}
             key={index}
             className="relative h-[75vh] max-md:h-80 w-full group"
             data-aos="fade-in" // AOS animation effect
@@ -59,7 +66,7 @@ const ServiceGrid = () => {
 
             {/* Image */}
             <img src={service.image} className="h-full w-full object-cover" alt={service.title} />
-          </div>
+          </Link>
         ))}
       </div>
     </section>
