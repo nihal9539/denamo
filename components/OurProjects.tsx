@@ -101,13 +101,13 @@ export default function ConstructionProjects() {
                   </motion.div>
                 )}
               </AnimatePresence>
-              <motion.div
+              {/* <motion.div
                 className="absolute top-4 right-4 z-10"
                 animate={{ rotate: hoveredIndex === index ? 45 : 0 }}
                 transition={{ duration: 0.3 }}
               >
                 <Building2 className="w-8 h-8 text-white" />
-              </motion.div>
+              </motion.div> */}
             </div>
           ))}
         </div>

@@ -12,24 +12,15 @@ export default function Footer() {
       {/* Footer content with increased z-index */}
       <div className="relative container mx-auto px-4 z-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {/* About Company */}
-          {/* <div>
-            <h2 className="text-xl font-semibold mb-4">About Company</h2>
-            <p className="mb-4">A small business can be better than a big business because of agility and adaptability due to their size and scale.</p>
-            <p className="font-semibold mb-2">Since 2000</p>
-            <p className="uppercase mb-1">WE ARE AVAILABLE</p>
-            <p><span>Mon-Sat:</span> 10:00am to 07:30pm</p>
-          </div> */}
+       
 
           {/* Useful Links 1 */}
           <div>
             <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-white">About Us</Link></li>
-              <li><Link href="#" className="hover:text-white">What We Do</Link></li>
-              <li><Link href="#" className="hover:text-white">News & Article</Link></li>
-              <li><Link href="#" className="hover:text-white">Success Story</Link></li>
-              <li><Link href="#" className="hover:text-white">FAQ&apos;s</Link></li>
+              <li><Link href="/" className="hover:text-white">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -37,22 +28,20 @@ export default function Footer() {
           <div>
             <h2 className="text-xl font-semibold mb-4">More Links</h2>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-white">Our Team</Link></li>
-              <li><Link href="#" className="hover:text-white">Careers</Link></li>
-              <li><Link href="#" className="hover:text-white">Testimonials</Link></li>
-              <li><Link href="#" className="hover:text-white">Privacy Policy</Link></li>
-              <li><Link href="#" className="hover:text-white">Terms of use</Link></li>
+              <li><Link href="/project" className="hover:text-white">Our Project</Link></li>
+              <li><Link href="/service" className="hover:text-white">Service</Link></li>
+           
             </ul>
           </div>
 
           {/* Office Address and Phone Number */}
           <div>
             <h2 className="text-xl font-semibold mb-4">Office Address</h2>
-            <p className="mb-4">Losangle, Street Road 24, New York, USA - 67452</p>
+            <p className="mb-4">H47V+8J3, Ar Rawdah, Jeddah 23433, Saudi Arabia</p>
             
             <h2 className="text-xl font-semibold mb-4">Phone Number</h2>
             <p>+121 551 579 266</p>
-            <p>+86 155 596 1658</p>
+            {/* <p>+86 155 596 1658</p> */}
           </div>
 
           {/* Email and Social Media */}
@@ -74,11 +63,6 @@ export default function Footer() {
         {/* Copyright and Bottom Links */}
         <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; 2024 Denamo | All rights reserved</p>
-          <div className="mt-4 md:mt-0 text-sm flex space-x-4">
-            <Link href="#" className="hover:text-white">Terms & Condition</Link>
-            <Link href="#" className="hover:text-white">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white">Contact Us</Link>
-          </div>
         </div>
       </div>
     </footer>
