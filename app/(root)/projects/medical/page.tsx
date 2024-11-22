@@ -15,10 +15,7 @@ export default function MedicalProjects() {
         "/Medical/KingRoadHospital/Picture1.png",
         "/Medical/KingRoadHospital/Picture10.png",
         "/Medical/KingRoadHospital/Picture4.png",
-        "/Medical/KingRoadHospital/Picture11.png",
-        "/Medical/KingRoadHospital/Picture12.png",
         "/Medical/KingRoadHospital/Picture14.png",
-        "/Medical/KingRoadHospital/Picture15.png",
         "/Medical/KingRoadHospital/Picture5.png",
         "/Medical/KingRoadHospital/Picture6.png",
         "/Medical/KingRoadHospital/Picture7.png",
@@ -31,17 +28,32 @@ export default function MedicalProjects() {
       work: "Design & Built Projects",
       place: "Jeddah, Saudi Arabia",
       details:
-        "Spanning 2,750 square meters, AZAL Medical Clinics and Day Surgery Center is designed to offer advanced medical services with a focus on patient well-being. Our team handled the complete design and construction, ensuring modern healthcare standards, functional spaces, and patient comfort.",
+        "AZAL Medical Clinics and Day Surgery Center is designed to offer advanced medical services with a focus on patient well-being. Our team handled the complete design and construction, ensuring modern healthcare standards, functional spaces, and patient comfort. This project was executed in collaboration with the DDC-LINK Franchise in Jeddah, Saudi Arabia. Project Area: 2,750 Square meters.",
+      images: ["/Medical/AZAL/Picture1.jpeg", "/Medical/AZAL/Picture2.jpeg"],
+    },
+    {
+      name: "Cardiac Imaging Center",
+      work: "Design Projects",
+      place: "Jeddah, Saudi Arabia ",
+      details:
+        "The Cardiac Imaging Center is a state-of-the-art facility designed and built in collaboration with Zuhair Fayez Partnership. Located in Jeddah, Saudi Arabia, the center features cutting-edge technology and a modern architectural design tailored to support advanced diagnostic and imaging services for cardiac care.",
       images: [
-        "/Medical/SHAHINI/Picture4.png",
-        "/Medical/SHAHINI/Picture1.png",
-        "/Medical/SHAHINI/Picture2.png",
-        "/Medical/SHAHINI/Picture3.png",
-        "/Medical/SHAHINI/Picture5.png",
-        "/Medical/SHAHINI/Picture6.png",
-        "/Medical/SHAHINI/Picture7.png",
-        "/Medical/SHAHINI/Picture8.png",
-        "/Medical/SHAHINI/Picture9.png",
+        "/Medical/Cardiac/Picture1.jpeg",
+        "/Medical/Cardiac/Picture2.jpeg",
+        "/Medical/Cardiac/Picture3.jpeg",
+        "/Medical/Cardiac/Picture4.jpeg",
+      ],
+    },
+    {
+      name: "Oncology Centre at KFMMC",
+      work: "Design Projects",
+      place: "Jeddah, Saudi Arabia ",
+      details:
+        "The Oncology Centre at King Fahd Military Medical Complex (KFMMC) is a comprehensive facility dedicated to cancer care. Designed and built in collaboration with Zuhair Fayez Partnership, the center incorporates advanced medical technology, patient-centered design, and sustainable practices. Located in Jeddah, Saudi Arabia, it provides specialized services to support oncology diagnostics and treatment in a modern and healing environment.",
+      images: [
+        "/Medical/Oncology/Picture1.jpeg",
+        "/Medical/Oncology/Picture2.jpeg",
+        "/Medical/Oncology/Picture3.jpeg",
       ],
     },
     {
@@ -51,15 +63,14 @@ export default function MedicalProjects() {
       details:
         "A specialized dental hospital designed to meet modern healthcare needs, offering advanced treatment rooms, surgery units, and patient care facilities. Our team handled both the design and construction, ensuring a functional and patient-friendly environment tailored for dental care.",
       images: [
-        "/Medical/SHAHINI/Picture4.png",
-        "/Medical/SHAHINI/Picture1.png",
-        "/Medical/SHAHINI/Picture2.png",
-        "/Medical/SHAHINI/Picture3.png",
-        "/Medical/SHAHINI/Picture5.png",
-        "/Medical/SHAHINI/Picture6.png",
-        "/Medical/SHAHINI/Picture7.png",
-        "/Medical/SHAHINI/Picture8.png",
-        "/Medical/SHAHINI/Picture9.png",
+        "/Medical/solar-medical/Picture3.jpeg",
+        "/Medical/solar-medical/Picture1.jpeg",
+        "/Medical/solar-medical/Picture2.jpeg",
+        "/Medical/solar-medical/Picture4.jpeg",
+        "/Medical/solar-medical/Picture5.jpeg",
+        "/Medical/solar-medical/Picture6.jpeg",
+        "/Medical/solar-medical/Picture7.jpeg",
+        "/Medical/solar-medical/Picture8.jpeg",
       ],
     },
     {
@@ -69,27 +80,37 @@ export default function MedicalProjects() {
       details:
         "A former 600-square-meter commercial showroom was transformed into a modern medical facility. Our team managed the design and construction, delivering functional healthcare spaces optimized for patient care and efficient operations.",
       images: [
-        "/Medical/SHAHINI/Picture4.png",
-        "/Medical/SHAHINI/Picture1.png",
-        "/Medical/SHAHINI/Picture2.png",
-        "/Medical/SHAHINI/Picture3.png",
-        "/Medical/SHAHINI/Picture5.png",
-        "/Medical/SHAHINI/Picture6.png",
-        "/Medical/SHAHINI/Picture7.png",
-        "/Medical/SHAHINI/Picture8.png",
-        "/Medical/SHAHINI/Picture9.png",
+        "/Medical/onsor/Picture1.jpeg",
+        "/Medical/onsor/Picture2.jpeg",
+        "/Medical/onsor/Picture3.jpeg",
+      ],
+    },
+    {
+      name: "LOTUS MEDICAL CLINICS",
+      work: "Design Projects",
+      place: "Saudi Arabia",
+      details:
+        "LOTUS Medical Clinics showcases a modern and luxurious design, blending elegance with functionality. The project emphasizes patient comfort, efficient workflows, and compliance with advanced medical standards. Located in Saudi Arabia, it highlights our expertise in creating high-quality healthcare facilities tailored to contemporary needs.",
+      images: [
+        "/Medical/lotus-clinic/Picture3.jpeg",
+        "/Medical/lotus-clinic/Picture1.jpeg",
+        "/Medical/lotus-clinic/Picture2.jpeg",
+        "/Medical/lotus-clinic/Picture4.jpeg",
       ],
     },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={"/project/Medical-Projects.jpg"} title={"Medical projects"} />
+      <HeaderWithTitle
+        image={"/project/Medical-Projects.jpg"}
+        title={"Medical projects"}
+      />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
-        {projects.map((project, index) => (
-           <ProjectSection project={project} key={index} index={index}/>
+          {projects.map((project, index) => (
+            <ProjectSection project={project} key={index} index={index} />
           ))}
         </div>
       </div>

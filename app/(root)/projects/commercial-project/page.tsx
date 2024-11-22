@@ -10,8 +10,8 @@ export default function HotelsRestaurantsProjects() {
       details:
         "Suliman Al-Habib Hospital is a modern healthcare facility focused on delivering high-quality medical services. Our construction management ensured compliance with international healthcare standards. The hospital features advanced infrastructure and specialized services designed to enhance patient comfort and operational efficiency, serving as a vital resource for the Riyadh community.",
       images: [
-        "/community/sulaiman/Picture7.jpg",
         "/community/sulaiman/Picture8.jpg",
+        "/community/sulaiman/Picture7.jpg",
         "/community/sulaiman/Picture10.jpg",
         "/community/sulaiman/Picture9.jpg",
         "/community/sulaiman/Picture11.jpg",
@@ -24,12 +24,12 @@ export default function HotelsRestaurantsProjects() {
       details:
         "The Obhour City Residential Project, in partnership with RAZA & OSOOL Company, involves the construction of 23 buildings. Key tasks include exterior building cladding removal to enhance both aesthetics and structural integrity, creating a vibrant and modern residential community in KSA.",
       images: [
-        "/community/obhor/picture1.png",
-        "/community/obhor/picture6.png",
-        "/community/obhor/picture2.png",
-        "/community/obhor/picture3.png",
-        "/community/obhor/picture4.png",
-        "/community/obhor/picture5.png",
+        "/community/obhor/Picture1.png",
+        "/community/obhor/Picture6.png",
+        "/community/obhor/Picture2.png",
+        "/community/obhor/Picture3.png",
+        "/community/obhor/Picture4.png",
+        "/community/obhor/Picture5.png",
       ],
     },
     {
