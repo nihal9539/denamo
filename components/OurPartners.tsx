@@ -10,14 +10,22 @@ const OurPartners = () => {
   }, []);
 
   const partners = [
-    { name: "Logoipsum", logo: "/client/icon-1.png" },
-    { name: "IPSUM", logo: "/client/icon-2.png" },
-    { name: "LQGO", logo: "/client/icon-3.png" },
-    { name: "Logoipsum Shield", logo: "/client/icon-4.png" },
-    { name: "Logo Ipsum", logo: "/client/icon-5.png" },
-    { name: "logo ipsum", logo: "/client/icon-6.jpeg" },
-    { name: "LQGO", logo: "/client/icon-3.png" },
-    { name: "Logoipsum Shield", logo: "/client/icon-4.png" },
+    { name: "Logoipsum", logo: "/client2/img-1.jpeg" },
+    { name: "IPSUM", logo: "/client2/img-2.jpeg" },
+    { name: "LQGO", logo: "/client2/img-3.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-4.jpeg" },
+    { name: "Logo Ipsum", logo: "/client2/img-5.jpeg" },
+    { name: "logo ipsum", logo: "/client2/img-6.jpeg" },
+    { name: "LQGO", logo: "/client2/img-7.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-8.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-9.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-10.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-11.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-12.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-13.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-14.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-15.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client2/img-16.jpeg" },
   ];
 
   return (
@@ -30,13 +38,14 @@ const OurPartners = () => {
           </p>
         </div>
         <div className="w-2/3 max-md:w-full max-md:px-2">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-6">
             {partners.map((partner, index) => (
-              <div key={partner.name} className="flex items-center justify-center bg-white p-4 rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay={index * 150}> {/* Add AOS effect to each logo */}
+              // data-aos-delay={index * 150}
+              <div key={partner.name} className="flex items-center justify-center bg-white p-4 rounded-lg shadow-md" data-aos="zoom-in" > {/* Add AOS effect to each logo */}
                 <img
                   src={partner.logo}
                   alt={`${partner.name} logo`}
-                  className="w-[100px] max-md:h-[60px] h-[100px]"
+                  className="w-[100px] max-md:h-[50px] h-[70px]"
                 />
               </div>
             ))}

@@ -8,27 +8,28 @@ import Link from "next/link";
 import { Card, CardContent } from "./ui/card";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Image from "next/image";
 
 export default function ConstructionProjects() {
   const projects = [
     {
       title: "Residential Projects",
-      image: "/project/Residential-Projects.jpg",
+      image: "/project/residential-projects.jpg",
       path: "/projects/residential-project",
     },
     {
       title: "Hotels & Restaurants Projects",
-      image: "/project/hotel.jpg",
+      image: "/project/hotel-project.jpg",
       path: "/projects/hotels-restaurants",
     },
     {
       title: "Commercial Projects",
-      image: "/project/Commercial-Projects.jpg",
+      image: "/project/commercial-projects.jpg",
       path: "/projects/commercial-project",
     },
     {
       title: "Educational Projects",
-      image: "/project/Educational-Projects.jpg",
+      image: "/project/educational-projects.jpg",
       path: "/projects/educational",
     },
     {
@@ -72,12 +73,15 @@ export default function ConstructionProjects() {
               data-aos-delay={index * 50} // Add delay for staggered animation
             >
               <Link href={project.path} className="relative h-64 w-full">
-                <img
+                <Image
                   src={project.image}
-                  loading="lazy"
                   alt={project.title}
+                  width={500} // Specify the width for the image
+                  height={250} // Specify the height for the image
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
                 />
+
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.div
@@ -107,13 +111,6 @@ export default function ConstructionProjects() {
                   </motion.div>
                 )}
               </AnimatePresence>
-              {/* <motion.div
-                className="absolute top-4 right-4 z-10"
-                animate={{ rotate: hoveredIndex === index ? 45 : 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Building2 className="w-8 h-8 text-white" />
-              </motion.div> */}
             </div>
           ))}
         </div>
@@ -125,10 +122,13 @@ export default function ConstructionProjects() {
           {projects.map((project, index) => (
             <Link href={project.path} key={index}>
               <Card>
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={500}
+                  height={250}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <CardContent className="mt-5">
                   <h3 className="text-xl font-semibold mb-2">

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 export default function ExperienceSection() {
   return (
@@ -26,7 +25,7 @@ export default function ExperienceSection() {
           </p>
           <div className="flex justify-between mb-8">
             <div>
-              <h4 className="text-4xl font-bold text-gray-600">28+</h4>
+              <h4 className="text-4xl font-bold text-gray-600">24+</h4>
               <p className="text-gray-600">Years Experience</p>
             </div>
             <div>
@@ -38,9 +37,6 @@ export default function ExperienceSection() {
               <p className="text-gray-600">Best Partners</p>
             </div>
           </div>
-          {/* <Button className="bg-gray-600 hover:bg-gray-700 text-white">
-            READ MORE
-          </Button> */}
         </div>
         <div className="flex flex-col items-start h-full  overflow-hidden  gap-3.5">
           <div className="flex gap-3.5 w-full  justify-center">
