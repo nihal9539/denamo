@@ -6,7 +6,7 @@ export default function ExperienceSection() {
     <section className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div>
-          <h2 className="text-xl text-black mb-4">ABOUT DENAMO</h2>
+          <h2 className="text-xl text-black mb-4">ABOUT DELANO</h2>
           <h3 className="text-5xl max-md:text-4xl text-gray-600 font-bold mb-6">
             We&apos;re Experienced in This Field
           </h3>

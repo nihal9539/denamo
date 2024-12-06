@@ -18,7 +18,7 @@ const ContactPage = () => {
                 </h1>
                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
                   <div className="bg-white rounded-lg p-6 block">
-                    <a href="javascript:;" className="flex items-center mb-6">
+                    <a href="" className="flex items-center mb-6">
                       <svg
                         width="30"
                         height="30"
@@ -35,10 +35,10 @@ const ContactPage = () => {
                         />
                       </svg>
                       <h5 className="text-black text-base font-normal leading-6 ml-5">
-                        470-601-1911
+                        +966122752019
                       </h5>
                     </a>
-                    <a href="javascript:;" className="flex items-center mb-6">
+                    <a href="mailto:info@delnao-ltd.com" className="flex items-center mb-6">
                       <svg
                         width="30"
                         height="30"
@@ -54,10 +54,10 @@ const ContactPage = () => {
                         />
                       </svg>
                       <h5 className="text-black text-base font-normal leading-6 ml-5">
-                        denamo1234@gmail.com
+                      info@delnao-ltd.com
                       </h5>
                     </a>
-                    <a href="javascript:;" className="flex items-center">
+                    <a href="https://www.google.com/maps?q=21.7634567,39.1108884" target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <svg
                         width="30"
                         height="30"
@@ -77,7 +77,8 @@ const ContactPage = () => {
                         />
                       </svg>
                       <h5 className="text-black text-base font-normal leading-6 ml-5">
-                      H47V+8J3, Ar Rawdah, Jeddah 23433, Saudi Arabia
+                        حي, JHUA8819, 8819 علي بن أبي البقاء، 3424، أبحر
+                        الشمالية، جدة 23815{" "}
                       </h5>
                     </a>
                   </div>

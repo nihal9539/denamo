@@ -55,7 +55,7 @@ export default function ConstructionProjects() {
     <section className="py-16 px-4 bg-gradient-to-br from-gray-100 to-gray-200">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
-          Our Projects
+          Our Real Projects
         </h2>
         <div className="grid grid-cols-1 max-sm:hidden md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

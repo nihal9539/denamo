@@ -62,7 +62,7 @@ export default function Footer() {
 
         {/* Copyright and Bottom Links */}
         <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; 2024 Denamo | All rights reserved</p>
+          <p>&copy; 2024 Delano | All rights reserved</p>
         </div>
       </div>
     </footer>
