@@ -4,23 +4,30 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ShowImage from "./ShowImage";
+import FullShowModal from "./FullShowModal";
 
 export default function ModernImageGrid({ images }: { images: string[] }) {
+  console.log(images);
+
   const [showModal, setShowModal] = useState(false); // Toggle to show modal
   const [selectedImage, setSelectedImage] = useState<string | null>(null); // State to hold the selected image
+  const [showFullModal, setShowFullModal] = useState(false); // Toggle full-image modal
 
   // Function to handle showing the modal
   const openModal = (image: string) => {
     setSelectedImage(image);
     setShowModal(true);
   };
+  // Function to handle showing the full-image modal
+  const openFullModal = () => {
+    setShowFullModal(true);
+  };
 
   // Function to close the modal
   const closeModal = () => {
     setShowModal(false);
-    setSelectedImage(null);
+    setShowFullModal(false);
   };
-
   return (
     <div className="mx-auto py-16 max-md:py-2 max-md:px-0 px-4">
       {images.length === 1 ? (
@@ -81,7 +88,7 @@ export default function ModernImageGrid({ images }: { images: string[] }) {
 
           {/* Right Side Images (Half height) */}
           <div className="flex flex-col h-96 max-md:h-60 gap-4 col-span-2">
-            {images.slice(1,3).map((image, index) => (
+            {images.slice(1, 3).map((image, index) => (
               <motion.div
                 key={index + 1}
                 className="relative flex-1 h-full rounded-lg overflow-hidden shadow-md"
@@ -102,6 +109,7 @@ export default function ModernImageGrid({ images }: { images: string[] }) {
 
           <div className="absolute bottom-5 right-5 text-center mt-8">
             <button
+              onClick={openFullModal}
               type="submit"
               className="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg !bg-white/70 text-gray-800 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gray-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             >
@@ -121,9 +129,14 @@ export default function ModernImageGrid({ images }: { images: string[] }) {
         </div>
       )}
 
-      {showModal && selectedImage && ( // Ensure selectedImage is not null before rendering
-        <ShowImage selectedImage={selectedImage} closeModal={closeModal} />
-      )}
+      {showModal &&
+        selectedImage && ( // Ensure selectedImage is not null before rendering
+          <ShowImage selectedImage={selectedImage} closeModal={closeModal} />
+        )}
+      {showFullModal &&
+        ( // Ensure selectedImage is not null before rendering
+          <FullShowModal images={images} closeModal={closeModal} />
+        )}
     </div>
   );
 }
