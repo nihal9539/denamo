@@ -13,7 +13,7 @@ const projectCategories = [
   },
   {
     name: "Commercial Projects",
-    image: "/project/commercial-projects.jpg",
+    image: "/project/Commercial-Projects.jpg",
     featured: true,
     link: "/projects/commercial-project",
   },
@@ -50,7 +50,7 @@ const projectCategories = [
   },
   {
     name: "Hotels & Restaurants Projects",
-    image: "/project/hotel-project.jpg",
+    image: "/project/hotel.jpg",
     featured: false,
     link: "/projects/hotels-restaurants",
   },

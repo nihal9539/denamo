@@ -146,7 +146,7 @@ export default function HotelsRestaurantsProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-     <HeaderWithTitle image={"/project/commercial-projects.jpg"} title={'COMMERCIAL PROJECTS'}/>
+     <HeaderWithTitle image={"/project/Commercial-Projects.jpg"} title={'COMMERCIAL PROJECTS'}/>
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
         {projects.map((project, index) => (
