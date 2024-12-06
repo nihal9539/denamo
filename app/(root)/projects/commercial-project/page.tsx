@@ -10,8 +10,8 @@ export default function HotelsRestaurantsProjects() {
       details:
         "Suliman Al-Habib Hospital is a modern healthcare facility focused on delivering high-quality medical services. Our construction management ensured compliance with international healthcare standards. The hospital features advanced infrastructure and specialized services designed to enhance patient comfort and operational efficiency, serving as a vital resource for the Riyadh community.",
       images: [
-        "/community/sulaiman/Picture8.jpg",
         "/community/sulaiman/Picture7.jpg",
+        "/community/sulaiman/Picture8.jpg",
         "/community/sulaiman/Picture10.jpg",
         "/community/sulaiman/Picture9.jpg",
         "/community/sulaiman/Picture11.jpg",

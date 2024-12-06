@@ -1,4 +1,3 @@
-"use client";
 import HeaderWithTitle from "@/components/HeaderWithTitle";
 import ProjectSection from "@/components/ProjectSection";
 
@@ -270,7 +269,7 @@ export default function EducationalProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={"/project/hotel-.jpg"} title={"Hotel and Resturents projects"} />
+      <HeaderWithTitle image={"/project/hotel.jpg"} title={"Hotel and Resturents projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

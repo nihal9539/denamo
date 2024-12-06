@@ -250,7 +250,7 @@ export default function ResidentialProject() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={'/project/residential-projects.jpg'} title={"residential projects"} />
+      <HeaderWithTitle image={'/project/Residential-Projects.jpg'} title={"residential projects"} />
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
           {projects.map((project, index) => (

@@ -27,7 +27,7 @@ export default function EducationalProjects() {
       name: "King Khalid University in BISHA",
       work: "Design & Built Projects",
       place: "BISHA, Saudi Arabia  ",
-      details:"",
+      details:"King Khalid University in Bisha is a prominent educational institution in Saudi Arabia. This project showcases our expertise in designing and constructing high-quality, functional spaces tailored for academic excellence. Located in Bisha, the facility integrates modern architectural elements with traditional Saudi aesthetics, providing a conducive environment for learning and development. Our work involved end-to-end project execution, including planning, design, and construction, ensuring the campus meets international standards for educational institutions.",
       images: [
         "/Educational/king-khalid/Picture1.jpeg",
         "/Educational/king-khalid/Picture2.jpeg",

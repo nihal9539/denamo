@@ -141,7 +141,8 @@ export default function MedicalProjects() {
       name: "King Khalid University in ABHA",
       work: "Interier Projects",
       place: "ABHA,Saudi Arabia",
-      details: "King Khalid University in ABHA is a distinguished institution focused on excellence in education and student life. Our interior projects for the university emphasize creating comfortable, functional, and inspiring spaces, including lecture halls, libraries, faculty offices, and student lounges. Each design is tailored to enhance the academic environment while promoting collaboration and innovation.",
+      details:
+        "King Khalid University in ABHA is a distinguished institution focused on excellence in education and student life. Our interior projects for the university emphasize creating comfortable, functional, and inspiring spaces, including lecture halls, libraries, faculty offices, and student lounges. Each design is tailored to enhance the academic environment while promoting collaboration and innovation.",
       images: [
         "/Medical/king-khalid-medical-abha/Picture1.jpeg",
         "/Medical/king-khalid-medical-abha/Picture2.jpeg",
@@ -152,12 +153,34 @@ export default function MedicalProjects() {
       ],
     },
     {
-      name: "ing Khalid University in BISHA",
+      name: "King Khalid University in BISHA",
       work: "Interier Projects",
       place: "BISHA,Saudi Arabia",
-      details:"",
+      details: "Our interior project for King Khalid University in Bisha, Saudi Arabia, exemplifies a perfect blend of functionality and aesthetics. Focused on medical facilities, the design ensures a comfortable, efficient, and welcoming environment for students, staff, and visitors. The interiors are thoughtfully planned, incorporating modern materials and finishes while adhering to international healthcare standards. Each space is optimized for its purpose, reflecting the university’s commitment to excellence in education and healthcare. This project highlights our expertise in delivering tailored interior solutions that inspire productivity and well-being",
       images: [
-        
+        "/Medical/king-khalid-medical-bisha/Picture1.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture2.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture3.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture4.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture5.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture6.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture7.jpeg",
+        "/Medical/king-khalid-medical-bisha/Picture8.jpeg",
+      ],
+    },
+    {
+      name: "Batterjee Medical College ",
+      work: "Interier Projects",
+      place: "Jeddah, Saudi Arabia ",
+      details: "",
+      images: [
+        "/Medical/batterjee/Picture1.jpeg",
+        "/Medical/batterjee/Picture2.jpeg",
+        "/Medical/batterjee/Picture3.jpeg",
+        "/Medical/batterjee/Picture4.jpeg",
+        "/Medical/batterjee/Picture5.jpeg",
+        "/Medical/batterjee/Picture6.jpeg",
+   
       ],
     },
   ];
