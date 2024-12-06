@@ -42,13 +42,17 @@ export default function ConstructionProjects() {
       path: "/projects/medical",
     },
   ];
-  
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   // Initialize AOS
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-in-out", once: true ,offset: 100});
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
   }, []);
 
   return (
@@ -70,12 +74,14 @@ export default function ConstructionProjects() {
               <Link href={project.path} className="relative h-64 w-full">
                 <img
                   src={project.image}
+                  loading="lazy"
                   alt={project.title}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                 />
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.div
+                      key={index}
                       className="absolute inset-0 bg-black"
                       initial={{ opacity: 0, x: "50%", y: "80%" }}
                       animate={{ opacity: 0.4, x: "0%", y: "0%" }}

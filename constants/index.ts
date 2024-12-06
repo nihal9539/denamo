@@ -42,7 +42,7 @@ export const links = [
         name: "Furniture Manufacturing",
         path: "/service/furniture-manufacturing",
       },
-      { name: "Turnkey Projects", path: "/service/turnkey-projects" },
+      { name: "Turn key Projects", path: "/service/turn-key-projects" },
       {
         name: "Building Information Modeling (BIM)",
         path: "/service/building-information-modeling",

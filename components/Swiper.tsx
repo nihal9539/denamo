@@ -51,24 +51,26 @@ const Swiper: React.FC = () => {
     <div className="relative h-[90vh] max-md:h-[50vh]">
       <div className="relative w-full h-full overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center">
-          {slides.map((slide, index) => (
+        <img
+                src={'profile.jpeg'}
+                alt={`Slide `}
+                className="w-full h-full object-cover"
+              />
+          {/* {slides.map((slide, index) => (
             <div
               key={index}
               className={`absolute w-full h-full flex justify-center items-center transition-opacity duration-300 ease-in ${
                 currentIndex === index ? "opacity-100" : "opacity-0"
               }`}
             >
-              {/* Image */}
               <img
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/15 z-10"></div>
 
-              {/* Title and Subtitle with animation */}
               {currentIndex === index && (
                 <motion.div
                   className="absolute bottom-16 left-16 max-md:left-5 max-md:bottom-10 text-left text-white z-20"
@@ -82,25 +84,25 @@ const Swiper: React.FC = () => {
                 </motion.div>
               )}
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
 
       {/* Left Button */}
-      <button
+      {/* <button
         className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/70 p-2 rounded-full z-30"
         onClick={prevSlide}
       >
         <ChevronLeft size={45} />
-      </button>
+      </button> */}
 
       {/* Right Button */}
-      <button
+      {/* <button
         className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/70 p-2 rounded-full z-30"
         onClick={nextSlide}
       >
         <ChevronRight size={45} />
-      </button>
+      </button> */}
 
      
     </div>

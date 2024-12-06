@@ -49,10 +49,10 @@ const services = [
   },
   {
     icon: <FaKey />,
-    name: "Turnkey Projects",
+    name: "Turn key Projects",
     description:
       "End-to-end solutions, delivering fully operational spaces ready for immediate use.",
-    path: "/service/turnkey-projects",
+    path: "/service/turn-key-projects",
   },
   {
     icon: <FaCogs />,

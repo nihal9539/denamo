@@ -1,6 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const ContactPage = () => {
+  const router = useRouter();
+  
   return (
     <section className="py-24 pb-10 bg-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +42,10 @@ const ContactPage = () => {
                         +966122752019
                       </h5>
                     </a>
-                    <a href="mailto:info@delnao-ltd.com" className="flex items-center mb-6">
+                    <a
+                      href="mailto:info@delnao-ltd.com"
+                      className="flex items-center mb-6"
+                    >
                       <svg
                         width="30"
                         height="30"
@@ -54,10 +61,15 @@ const ContactPage = () => {
                         />
                       </svg>
                       <h5 className="text-black text-base font-normal leading-6 ml-5">
-                      info@delnao-ltd.com
+                        info@delnao-ltd.com
                       </h5>
                     </a>
-                    <a href="https://www.google.com/maps?q=21.7634567,39.1108884" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <a
+                      href="https://www.google.com/maps?q=21.7634567,39.1108884"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center"
+                    >
                       <svg
                         width="30"
                         height="30"
@@ -87,34 +99,48 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className=" h-[70%] p-5 lg:p-11 !pt-2 lg:rounded-r-2xl rounded-2xl">
+          <div
+            // encType="multipart/form-data"
+            // method="POST"
+            // action={
+            //   "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec"
+            // }
+            className=" h-[70%] p-5 lg:p-11 !pt-2 lg:rounded-r-2xl rounded-2xl"
+          >
             <h2 className="text-gray-700 font-manrope text-4xl font-semibold leading-10 mb-11">
               Send Us A Message
             </h2>
-            <input
-              type="text"
-              className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
-              placeholder="Name"
-            />
-            <input
-              type="text"
-              className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
-              placeholder="Email"
-            />
-            <input
-              type="text"
-              className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
-              placeholder="Subject"
-            />
+            <form className="form" >
+              <input
+                type="text"
+                name="name"
+                // value={formData.name}
+                // onChange={handleChange}
+                className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                name="email"
+                className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                name="subject"
+                className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-5"
+                placeholder="Subject"
+              />
 
-            {/* <textarea name="" id=""></textarea> */}
-            <textarea
-              className="w-full h-52 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 p-2 resize-none mb-5"
-              placeholder="Message..."
-            ></textarea>
-            <button className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-gray-700 shadow-sm">
-              Send
-            </button>
+              <textarea
+                className="w-full h-52 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 p-2 resize-none mb-5"
+                placeholder="Message..."
+                name="details"
+              ></textarea>
+              <button className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-gray-700 shadow-sm">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>

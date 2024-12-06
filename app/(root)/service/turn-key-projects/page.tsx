@@ -14,7 +14,7 @@ import HeaderWithTitle from "@/components/HeaderWithTitle";
 export default function TurnkeyProjects() {
   return (
     <div className="bg-white min-h-screen">
-      <HeaderWithTitle image={'/service/Turnkey Projects.jpg'} title={"Turnkey Projects"} />
+      <HeaderWithTitle image={'/service/Turnkey Projects.jpg'} title={"Turn key Projects"} />
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Introduction Section */}
@@ -25,7 +25,7 @@ export default function TurnkeyProjects() {
                 Complete Solutions from Concept to Completion
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Our turnkey project services offer end-to-end solutions, taking
+                Our Turn key project services offer end-to-end solutions, taking
                 your ideas from concept to final execution. We handle all
                 phases—design, procurement, construction, and handover—ensuring
                 a seamless experience and high-quality results for every project.
@@ -37,7 +37,7 @@ export default function TurnkeyProjects() {
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/service/Turnkey Projects-2.jpg"
-                alt="Turnkey Projects"
+                alt="Turn key Projects"
                 layout="fill"
                 objectFit="cover"
                 className="transition-transform duration-300 hover:scale-105"
@@ -49,7 +49,7 @@ export default function TurnkeyProjects() {
         {/* Our Approach Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-            Our Turnkey Project Approach
+            Our Turn key Project Approach
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -144,7 +144,7 @@ export default function TurnkeyProjects() {
         {/* Call to Action */}
         <section id="contact" className="text-center">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900">
-            Start Your Turnkey Project Today
+            Start Your Turn key Project Today
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Whether you&apos;
