@@ -7,7 +7,7 @@ import Link from "next/link";
 const projectCategories = [
   {
     name: "Residential Projects",
-    image: "/project/residential-projects.jpg",
+    image: "/project/Residential-Projects.jpg",
     featured: true,
     link: "/projects/residential-project",
   },
