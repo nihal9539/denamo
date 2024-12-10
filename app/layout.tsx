@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Delano Company Limited - Worldwide Architectural & Design Solutions",
+
   description:
     "Delano Company Limited specializes in Architectural Design, Interior Design, Engineering, Hospitality Management, Hotel Operation, and Real Estate Development worldwide.",
 

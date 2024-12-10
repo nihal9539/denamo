@@ -1,6 +1,11 @@
 import Ourmission from "@/components/Ourmission";
 import React from "react";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Top Construction Company in Saudi Arabia | Approved Valuers | Delano",
+  description:"Delano Developers is one of the top developers in Saudi Arabia, specializing in designing and constructing a wide range of projects, including houses, flats, villas, residential buildings, shopping malls, offices, educational institutions, industrial facilities, and medical facilities."
 
+};
 const AboutPage = () => {
   return (
     <div>

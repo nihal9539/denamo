@@ -1,88 +1,73 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import Head from "next/head";
-
-const ContactPage = () => {
-  const router = useRouter();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    details: "",
-  });
-
-  const handleChange = (e: any) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    console.log(formData);
-
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(formData), // JSON.stringify(formData),
-          mode: "no-cors",
+const ContactUs = () => {
+    const router = useRouter();
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      subject: "",
+      details: "",
+    });
+  
+    const handleChange = (e: any) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e: any) => {
+      e.preventDefault();
+      console.log(formData);
+  
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec",
+          {
+            method: "POST",
+            body: JSON.stringify(formData), // JSON.stringify(formData),
+            mode: "no-cors",
+          }
+        );
+  
+        if (response.ok) {
+          // Handle successful submission (e.g., show success message)
+          alert("Message sent successfully!");
+          router.push("/"); // Redirect to home page
+        } else {
+          // Handle error (e.g., show error message)
+          alert("Error sending message. Please try again.");
         }
-      );
-
-      if (response.ok) {
-        // Handle successful submission (e.g., show success message)
-        alert("Message sent successfully!");
-        router.push("/"); // Redirect to home page
-      } else {
-        // Handle error (e.g., show error message)
-        alert("Error sending message. Please try again.");
+      } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
       }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again later.");
-    }
-  };
-  const handleSubmit2 = async (e: any) => {
-    e.preventDefault(); // Prevent default form submission
-
-    const formData = new FormData(e.target); // Create FormData from the form
-    console.log(formData);
-
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec",
-        {
-          method: "POST",
-          body: formData,
+    };
+    const handleSubmit2 = async (e: any) => {
+      e.preventDefault(); // Prevent default form submission
+  
+      const formData = new FormData(e.target); // Create FormData from the form
+      console.log(formData);
+  
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+  
+        if (response.ok) {
+          // Redirect to the home page after successful form submission
+          router.push("/"); // In Next.js, you can use router.push()
+        } else {
+          console.error("Form submission failed", response);
         }
-      );
-
-      if (response.ok) {
-        // Redirect to the home page after successful form submission
-        router.push("/"); // In Next.js, you can use router.push()
-      } else {
-        console.error("Form submission failed", response);
+      } catch (error) {
+        console.error("Error during form submission:", error);
       }
-    } catch (error) {
-      console.error("Error during form submission:", error);
-    }
-  };
+    };
   return (
-    <>
-      <Head>
-        <title>Contact Us </title>
-        <meta
-          name="description"
-          content="Get in touch with us! Contact us page for [Your Company/Website Name]."
-        />
-        <meta
-          name="keywords"
-          content="contact, us, [Your Company Name], [Your Industry], [Relevant Keywords]"
-        />
-      </Head>
-
-      <section className="py-24 pb-10 bg-gray-100">
+<section className="py-24 pb-10 bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid  lg:grid-cols-2 grid-cols-1">
             <div className="lg:mb-0 h-[70%]  mb-10">
@@ -227,9 +212,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
-    </>
-  );
-};
+      </section>  )
+}
 
-export default ContactPage;
+export default ContactUs
