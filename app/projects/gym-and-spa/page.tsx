@@ -8,9 +8,9 @@ const projects = [
       place: "Saudi Arabia",
       details:"We have specialized in creating GYM and Spa designs that promote a healthier lifestyle. Our work includes delivering world-class fitness facilities with state-of-the-art equipment and luxurious spa environments, focusing on enhancing both physical health and mental relaxation for a complete wellness experience.",
       images: [
-        "/gym-and-spa/gym-spa-1.jpeg",
-        "/gym-and-spa/gym-spa-2.jpeg",
-        "/gym-and-spa/gym-spa-3.jpeg",
+        "/projects/gym-and-spa/health-club/gym-spa-1.jpeg",
+        "/projects/gym-and-spa/health-club/gym-spa-2.jpeg",
+        "/projects/gym-and-spa/health-club/gym-spa-3.jpeg",
       ],
     }
   ];

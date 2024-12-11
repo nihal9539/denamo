@@ -10,22 +10,22 @@ const OurPartners = () => {
   }, []);
 
   const partners = [
-    { name: "Logoipsum", logo: "/client2/img-1.jpeg" },
-    { name: "IPSUM", logo: "/client2/img-2.jpeg" },
-    { name: "LQGO", logo: "/client2/img-3.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-4.jpeg" },
-    { name: "Logo Ipsum", logo: "/client2/img-5.jpeg" },
-    { name: "logo ipsum", logo: "/client2/img-6.jpeg" },
-    { name: "LQGO", logo: "/client2/img-7.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-8.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-9.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-10.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-11.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-12.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-13.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-14.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-15.jpeg" },
-    { name: "Logoipsum Shield", logo: "/client2/img-16.jpeg" },
+    { name: "Logoipsum", logo: "/client/img-1.jpeg" },
+    { name: "IPSUM", logo: "/client/img-2.jpeg" },
+    { name: "LQGO", logo: "/client/img-3.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-4.jpeg" },
+    { name: "Logo Ipsum", logo: "/client/img-5.jpeg" },
+    { name: "logo ipsum", logo: "/client/img-6.jpeg" },
+    { name: "LQGO", logo: "/client/img-7.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-8.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-9.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-10.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-11.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-12.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-13.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-14.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-15.jpeg" },
+    { name: "Logoipsum Shield", logo: "/client/img-16.jpeg" },
   ];
 
   return (

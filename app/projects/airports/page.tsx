@@ -9,9 +9,9 @@ const projects = [
     details:
       "We collaborated with Zuhair Fayez Partnership and ADPI to design the King Abdul Aziz International Airport, an iconic gateway serving the cities of Jeddah and Mecca. Located 19 kilometers (12 mi) north of Jeddah, the airport spans a massive area of 105 square kilometers (41 sq mi) and covers a project area of 1,630,000 square meters.The project reflects modern architectural excellence.",
     images: [
-      "/airport/Madain/Picture1.jpeg",
-      "/airport/Madain/Picture2.jpeg",
-      "/airport/Madain/Picture3.jpeg",
+      "/projects/airport/Madain/Picture1.jpeg",
+      "/projects/airport/Madain/Picture2.jpeg",
+      "/projects/airport/Madain/Picture3.jpeg",
     ],
   },
   {
@@ -21,17 +21,17 @@ const projects = [
     details:
       "We collaborated with Zuhair Fayez Partnership and ADPI to design the King Abdul Aziz International Airport, an iconic gateway serving the cities of Jeddah and Mecca. Located 19 kilometers (12 mi) north of Jeddah, the airport spans a massive area of 105 square kilometers (41 sq mi) and covers a project area of 1,630,000 square meters.The project reflects modern architectural excellence.",
     images: [
-      "/airport/king-abdul-aziz-airport/Picture1.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture2.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture3.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture5.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture6.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture7.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture8.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture10.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture11.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture12.jpeg",
-      "/airport/king-abdul-aziz-airport/Picture13.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture1.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture2.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture3.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture5.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture6.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture7.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture8.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture10.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture11.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture12.jpeg",
+      "/projects/airport/king-abdul-aziz-airport/Picture13.jpeg",
     ],
   },
 ];
