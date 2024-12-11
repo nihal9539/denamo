@@ -12,9 +12,9 @@ export default function IndustrialProjects() {
       details:
         "This industrial project reflects the expertise and precision required to support AACC's operations. The design seamlessly integrates functional architecture with operational efficiency, providing customized spaces for industrial processes. The project includes robust infrastructure tailored to meet industry standards, ensuring optimal performance. From planning to execution, our team managed the entire project lifecycle to deliver a high-quality industrial facility.",
       images: [
-        "/Industrial/AACCCompany/Picture1.png",
-        "/Industrial/AACCCompany/Picture2.png",
-        "/Industrial/AACCCompany/Picture3.png",
+        "/projects/industrial-projects/AACCCompany/Picture1.png",
+        "/projects/industrial-projects/AACCCompany/Picture2.png",
+        "/projects/industrial-projects/AACCCompany/Picture3.png",
       ],
     },
     {
@@ -24,13 +24,13 @@ export default function IndustrialProjects() {
       details:
         "This renovation project transforms the existing warehouse for the Batterjee Group, incorporating modern design principles and sustainable solutions in collaboration with Saudi Green Company. The upgrade focuses on enhancing storage capacity, optimizing workflow, and integrating eco-friendly technologies. The project ensures the facility aligns with contemporary operational needs while promoting energy efficiency and sustainability.",
       images: [
-        "/Industrial/Batterjee/Picture1.png",
-        "/Industrial/Batterjee/Picture2.png",
-        "/Industrial/Batterjee/Picture3.png",
-        "/Industrial/Batterjee/Picture4.png",
-        "/Industrial/Batterjee/Picture5.png",
-        "/Industrial/Batterjee/Picture6.png",
-        "/Industrial/Batterjee/Picture7.png",
+        "/projects/industrial-projects/Batterjee/Picture1.png",
+        "/projects/industrial-projects/Batterjee/Picture2.png",
+        "/projects/industrial-projects/Batterjee/Picture3.png",
+        "/projects/industrial-projects/Batterjee/Picture4.png",
+        "/projects/industrial-projects/Batterjee/Picture5.png",
+        "/projects/industrial-projects/Batterjee/Picture6.png",
+        "/projects/industrial-projects/Batterjee/Picture7.png",
       ],
     },
   ];

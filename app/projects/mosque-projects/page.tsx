@@ -8,12 +8,12 @@ const projects = [
     place: "Jeddah,Saudi Arabia",
     details: "We collaborated with Zuhair Fayez Partnership, Architect Loai Mattar, ADPI, and GACA to create the King Abdul-Aziz International Airport Mosque, a landmark in Jeddah, Saudi Arabia. Our team worked meticulously to blend traditional Islamic patterns with modern construction techniques, ensuring the mosque reflects its cultural and spiritual significance. Strategically located as a gateway to Makkah and Madinah, the mosque stands as an iconic representation of Islamic architecture, embodying both tradition and innovation.",
     images: [
-      "/mosque/king-abdul-aziz/Picture1.jpeg",
-      "/mosque/king-abdul-aziz/Picture2.jpeg",
-      "/mosque/king-abdul-aziz/Picture3.jpeg",
-      "/mosque/king-abdul-aziz/Picture4.jpeg",
-      "/mosque/king-abdul-aziz/Picture6.jpeg",
-      "/mosque/king-abdul-aziz/Picture7.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture1.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture2.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture3.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture4.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture6.jpeg",
+      "/projects/mosque-projects/king-abdul-aziz/Picture7.jpeg",
     ],
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     place: "Dammam,Saudi Arabia",
     details: "We partnered with Zuhair Fayez Partnership, AI Architecture LLC USA, and the Dammam Municipality to deliver the detailed design for the King Abdullah Civic Center Mosque. Located in Dammam, Saudi Arabia, this mosque exemplifies a fusion of traditional Islamic architecture with modern design elements. Our collaborative effort ensured a structure that reflects cultural identity while embracing innovation.",
     images: [
-      "/mosque/king-abdulla/Picture1.jpeg",
+      "/projects/mosque-projects/king-abdulla/Picture1.jpeg",
 
     ],
   },
@@ -32,11 +32,11 @@ const projects = [
     place: "Dammam,Saudi Arabia",
     details: "We undertook the detailed design of the Islamic Center in Argentina, focusing on creating a space that embodies the essence of Islamic architecture while harmonizing with its surroundings. The design integrates traditional Islamic motifs with modern functionality, providing a cultural and spiritual hub for the community. This project reflects our commitment to crafting meaningful and iconic structures that resonate with cultural and religious significance.",
     images: [
-      "/mosque/Islamic-center-argentina/Picture1.jpeg",
-      "/mosque/Islamic-center-argentina/Picture2.jpeg",
-      "/mosque/Islamic-center-argentina/Picture3.jpeg",
-      "/mosque/Islamic-center-argentina/Picture4.jpeg",
-      "/mosque/Islamic-center-argentina/Picture5.jpeg",
+      "/projects/mosque-projects/Islamic-center-argentina/Picture1.jpeg",
+      "/projects/mosque-projects/Islamic-center-argentina/Picture2.jpeg",
+      "/projects/mosque-projects/Islamic-center-argentina/Picture3.jpeg",
+      "/projects/mosque-projects/Islamic-center-argentina/Picture4.jpeg",
+      "/projects/mosque-projects/Islamic-center-argentina/Picture5.jpeg",
     ],
   },
 ];
