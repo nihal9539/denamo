@@ -10,11 +10,11 @@ export default function HotelsRestaurantsProjects() {
       details:
         "Suliman Al-Habib Hospital is a modern healthcare facility focused on delivering high-quality medical services. Our construction management ensured compliance with international healthcare standards. The hospital features advanced infrastructure and specialized services designed to enhance patient comfort and operational efficiency, serving as a vital resource for the Riyadh community.",
       images: [
-        "/community/sulaiman/Picture7.jpg",
-        "/community/sulaiman/Picture8.jpg",
-        "/community/sulaiman/Picture10.jpg",
-        "/community/sulaiman/Picture9.jpg",
-        "/community/sulaiman/Picture11.jpg",
+        "/projects/commercial/sulaiman/Picture7.jpg",
+        "/projects/commercial/sulaiman/Picture8.jpg",
+        "/projects/commercial/sulaiman/Picture10.jpg",
+        "/projects/commercial/sulaiman/Picture9.jpg",
+        "/projects/commercial/sulaiman/Picture11.jpg",
       ],
     },
     {
@@ -24,12 +24,12 @@ export default function HotelsRestaurantsProjects() {
       details:
         "The Obhour City Residential Project, in partnership with RAZA & OSOOL Company, involves the construction of 23 buildings. Key tasks include exterior building cladding removal to enhance both aesthetics and structural integrity, creating a vibrant and modern residential community in KSA.",
       images: [
-        "/community/obhor/Picture1.png",
-        "/community/obhor/Picture6.png",
-        "/community/obhor/Picture2.png",
-        "/community/obhor/Picture3.png",
-        "/community/obhor/Picture4.png",
-        "/community/obhor/Picture5.png",
+        "/projects/commercial/obhor/Picture1.png",
+        "/projects/commercial/obhor/Picture6.png",
+        "/projects/commercial/obhor/Picture2.png",
+        "/projects/commercial/obhor/Picture3.png",
+        "/projects/commercial/obhor/Picture4.png",
+        "/projects/commercial/obhor/Picture5.png",
       ],
     },
     {
@@ -38,7 +38,7 @@ export default function HotelsRestaurantsProjects() {
       place: "NAJRAN, Saudi Arabia",
       details:
         "The King Saud University Administration Building is a state-of-the-art project designed to support the university’s administrative operations. Our team managed the project from concept to completion, ensuring both functionality and aesthetic appeal. The building aligns with the university’s vision for growth and innovation, serving as a vital hub for academic and operational activities.",
-      images: ["/community/kingsaud/Picture1.png"],
+      images: ["/projects/commercial/kingsaud/Picture1.png"],
     },
     {
       name: "Al Jouh Plaza Shopping Center",
@@ -46,7 +46,7 @@ export default function HotelsRestaurantsProjects() {
       place: "Sakaka - Saudi Arabia",
       details:
         "Al Jouh Plaza, the largest shopping mall in Al Jouf province, is a key Design & Build project by our team. Located at the intersection of Al Arab Street and King Fahad Road, it provides easy access from all sides. Spanning 55,000 square meters with a Gross Leasable Area (GLA) of 34,300 square meters, the mall serves as a high-quality commercial hub.",
-      images: ["/community/JouhPlaza/JouhPlaza.png"],
+      images: ["/projects/commercial/JouhPlaza/JouhPlaza.png"],
     },
     {
       name: "Rawdah Residential Tower ",
@@ -55,10 +55,10 @@ export default function HotelsRestaurantsProjects() {
       details:
         "The Rawdah Residential Tower is a project where our team managed both the design and construction phases. This Design & Build endeavor features commercial and residential spaces, strategically located in Jeddah. The tower combines modern architectural aesthetics with functional living environments.",
       images: [
-        "/community/Rawdah/Picture26.png",
-        "/community/Rawdah/Picture27.png",
-        "/community/Rawdah/Picture28.png",
-        "/community/Rawdah/Picture29.png",
+        "/projects/commercial/Rawdah/Picture26.png",
+        "/projects/commercial/Rawdah/Picture27.png",
+        "/projects/commercial/Rawdah/Picture28.png",
+        "/projects/commercial/Rawdah/Picture29.png",
       ],
     },
     {
@@ -68,9 +68,9 @@ export default function HotelsRestaurantsProjects() {
       details:
         "This project showcases our expertise in design and construction, focusing on creating a premier venue for commercial and entertainment purposes, featuring innovative architecture and versatile spaces for events, concerts, and exhibitions.",
       images: [
-        "/community/dome/Picture30.png",
-        "/community/dome/Picture31.png",
-        "/community/dome/Picture31.png",
+        "/projects/commercial/dome/Picture30.png",
+        "/projects/commercial/dome/Picture31.png",
+        "/projects/commercial/dome/Picture31.png",
       ],
     },
 
@@ -80,10 +80,10 @@ export default function HotelsRestaurantsProjects() {
       place: "Saudi Arabia",
       details: "This project entails the design and construction of a Commercial Strip Mall in Saudi Arabia. The mall features a mix of retail spaces, dining options, and community facilities, aimed at enhancing the shopping experience. The design emphasizes accessibility and aesthetics, creating a vibrant destination for shoppers and visitors.",
       images: [
-        "/community/CommercialStripMall/Picture38.png",
-        "/community/CommercialStripMall/Picture39.png",
-        "/community/CommercialStripMall/Picture40.png",
-        "/community/CommercialStripMall/Picture41.png",
+        "/projects/commercial/CommercialStripMall/Picture38.png",
+        "/projects/commercial/CommercialStripMall/Picture39.png",
+        "/projects/commercial/CommercialStripMall/Picture40.png",
+        "/projects/commercial/CommercialStripMall/Picture41.png",
       ],
     },
     {
@@ -92,10 +92,10 @@ export default function HotelsRestaurantsProjects() {
       place: "Saudi Arabia",
       details: "This project involves the construction of Gloriole Restaurant & Café, designed to offer a cozy and inviting atmosphere for diners. The facility features a contemporary design with outdoor seating and a diverse menu, making it a popular destination for both locals and tourists seeking a memorable dining experience.",
       images: [
-        "/community/Gloriole/Picture42.png",
-        "/community/Gloriole/Picture43.png",
-        "/community/Gloriole/Picture44.png",
-        "/community/Gloriole/Picture45.png",
+        "/projects/commercial/Gloriole/Picture42.png",
+        "/projects/commercial/Gloriole/Picture43.png",
+        "/projects/commercial/Gloriole/Picture44.png",
+        "/projects/commercial/Gloriole/Picture45.png",
       ],
     },
     {
@@ -104,11 +104,11 @@ export default function HotelsRestaurantsProjects() {
       place: "Riyadh, Saudi Arabia",
       details: "This project encompasses the design and construction of a luxurious Mercedes Benz showroom in Riyadh, Saudi Arabia. Featuring contemporary architecture and high-end finishes, the showroom is designed to provide an exceptional experience for customers",
       images: [
-        "/community/benz/Picture1.png",
-        "/community/benz/Picture4.png",
-        "/community/benz/Picture2.png",
-        "/community/benz/Picture3.png",
-        "/community/benz/Picture5.png",
+        "/projects/commercial/benz/Picture1.png",
+        "/projects/commercial/benz/Picture4.png",
+        "/projects/commercial/benz/Picture2.png",
+        "/projects/commercial/benz/Picture3.png",
+        "/projects/commercial/benz/Picture5.png",
       ],
     },
     {
@@ -117,7 +117,7 @@ export default function HotelsRestaurantsProjects() {
       place: "KAEC,Saudi Arabia",
       details: "This project focuses on the design and construction supervision of a state-of-the-art fire station in KAEC, Saudi Arabia. It is equipped with modern facilities to ensure quick response times and effective firefighting capabilities, serving the needs of the surrounding coastal communities.",
       images: [
-        "/community/firestation/Picture1.png",
+        "/projects/commercial/firestation/Picture1.png",
       ],
     },
     {
@@ -126,10 +126,10 @@ export default function HotelsRestaurantsProjects() {
       place: "Saudi Arabia",
       details: "This project involves the design and construction supervision of the Coastal Communities Central Service Hub, a strip mall catering to the needs of residents and visitors. The hub combines essential services, retail outlets, and dining options, offering a convenient and vibrant space for the community. The design focuses on functionality and accessibility, enhancing the coastal lifestyle experience.",
       images: [
-        "/community/CoastalStripMall/Picture1.png",
-        "/community/CoastalStripMall/Picture2.png",
-        "/community/CoastalStripMall/Picture3.png",
-        "/community/CoastalStripMall/Picture4.png",
+        "/projects/commercial/CoastalStripMall/Picture1.png",
+        "/projects/commercial/CoastalStripMall/Picture2.png",
+        "/projects/commercial/CoastalStripMall/Picture3.png",
+        "/projects/commercial/CoastalStripMall/Picture4.png",
       ],
     },
     {
@@ -138,7 +138,7 @@ export default function HotelsRestaurantsProjects() {
       place: "Saudi Arabia",
       details: "This project involves the design and construction supervision of a gas station within the Coastal Communities Central Service Hub. The station is designed to provide essential fueling services alongside convenience retail, ensuring accessibility and efficiency for residents and travelers. The focus is on integrating modern infrastructure with environmental considerations to enhance the coastal community experience.",
       images: [
-        "/community/CoastalStripGas/Picture1.png",
+        "/projects/commercial/CoastalStripGas/Picture1.png",
       
       ],
     },
@@ -146,7 +146,7 @@ export default function HotelsRestaurantsProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-     <HeaderWithTitle image={"/projects/Commercial-Projects.jpg"} title={'COMMERCIAL PROJECTS'}/>
+     <HeaderWithTitle image={"/projects/commercial-projects.jpg"} title={'COMMERCIAL PROJECTS'}/>
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
         {projects.map((project, index) => (
