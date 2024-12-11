@@ -13,7 +13,7 @@ export default function ConstructionProjects() {
   const projects = [
     {
       title: "Residential Projects",
-      image: "/projects/Residential-projects.jpg",
+      image: "/projects/residential-projects.jpg",
       path: "/projects/residential-project",
     },
     {
