@@ -87,7 +87,7 @@ function Navbar() {
                 {/* Sublinks */}
                 {/* Sublinks */}
                 {link.subLinks && (
-                  <ul
+                  <div
                     className={`absolute left-1/2 transform -translate-x-1/2 mt-0  shadow-md rounded-lg overflow-hidden transition-all duration-700 ease-in-out ${
                       (link.name === "Services" && serviceOpen) ||
                       (link.name === "Projects" && projectOpen)
@@ -95,7 +95,7 @@ function Navbar() {
                         : "max-h-0 w-72 opacity-0"
                     }`}
                   >
-                    <div className="mt-3 grid grid-cols-2 bg-white/90 rounded-md">
+                    <ul className="mt-3 grid grid-cols-2 bg-white/90 rounded-md">
                       {link.subLinks.map((subLink) => (
                         <li key={subLink.name}>
                           <Link
@@ -107,8 +107,8 @@ function Navbar() {
                           </Link>
                         </li>
                       ))}
-                    </div>
-                  </ul>
+                    </ul>
+                  </div>
                 )}
               </div>
             ))}
