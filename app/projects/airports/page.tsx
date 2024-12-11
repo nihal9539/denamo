@@ -40,7 +40,7 @@ const page = async() => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={'/project/Airports.jpg'} title={"Airport Projects"} />
+      <HeaderWithTitle image={'/projects/Airports.jpg'} title={"Airport Projects"} />
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
           {projects.map((project, index) => (

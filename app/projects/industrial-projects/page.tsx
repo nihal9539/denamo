@@ -37,7 +37,7 @@ export default function IndustrialProjects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={"/project/Industrial.jpg"} title={"Industrial projects"} />
+      <HeaderWithTitle image={"/projects/Industrial.jpg"} title={"Industrial projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

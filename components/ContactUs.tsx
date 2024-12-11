@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import axios from 'axios'
 import { useRouter } from "next/navigation";
 const ContactUs = () => {
     const router = useRouter();
@@ -14,33 +15,35 @@ const ContactUs = () => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
     };
   
-    const handleSubmit = async (e: any) => {
-      e.preventDefault();
-      console.log(formData);
+    // const handleSubmit = async (e: any) => {
+    //   e.preventDefault();
+    //   console.log(formData);
   
-      try {
-        const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec",
-          {
-            method: "POST",
-            body: JSON.stringify(formData), // JSON.stringify(formData),
-            mode: "no-cors",
-          }
-        );
+    //   try {
+    //     const response = await fetch(
+
+    //       "AKfycbyV6lLpNQxQScCCMbCjcqsGcPaiMMAAzFYM9WPhWxion9jCklaB6eujuKZDjJCFSfEp",
+    //       // "AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z",
+    //       {
+    //         method: "POST",
+    //         body: JSON.stringify(formData), // JSON.stringify(formData),
+    //         mode: "no-cors",
+    //       }
+    //     );
   
-        if (response.ok) {
-          // Handle successful submission (e.g., show success message)
-          alert("Message sent successfully!");
-          router.push("/"); // Redirect to home page
-        } else {
-          // Handle error (e.g., show error message)
-          alert("Error sending message. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-      }
-    };
+    //     if (response.ok) {
+    //       // Handle successful submission (e.g., show success message)
+    //       alert("Message sent successfully!");
+    //       router.push("/"); // Redirect to home page
+    //     } else {
+    //       // Handle error (e.g., show error message)
+    //       alert("Error sending message. Please try again.");
+    //     }
+    //   } catch (error) {
+    //     console.error("Error:", error);
+    //     alert("An error occurred. Please try again later.");
+    //   }
+    // };
     const handleSubmit2 = async (e: any) => {
       e.preventDefault(); // Prevent default form submission
   
@@ -66,6 +69,35 @@ const ContactUs = () => {
         console.error("Error during form submission:", error);
       }
     };
+
+    // 
+ 
+const handleSubmit = async (e: any) => {
+  e.preventDefault();
+
+  try {
+      // Replace with your full Google Apps Script Web App URL
+      // const scriptURL = 'https://script.google.com/macros/s/AKfycbwV6lLpNQxQScCCMbCjcqsGcPaiMMAAzFYM9WPhWxion9jCklaB6eujuKZDjJCFSfEp/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx_lwIbzHX5T5KPC2nhvsW0NkyslXFPCNBHFWpcM-dg0vEbAqsZSk6LrkY0b2-3E0Qr/exec';
+      
+      
+      // Adjust formData to match your input fields
+      const formData = {
+          name: "User Name", // Replace with actual form input value
+          email: "user@example.com", // Replace with actual form input value
+          message: "This is a test message." // Replace with actual form input value
+      };
+
+      const response = await axios.post(scriptURL, formData, {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+      console.log('Success:', response.data); // Logs success message
+  } catch (error) {
+      console.error('Error:', error); // Logs error
+  }
+};
   return (
 <section className="py-24 pb-10 bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -170,7 +202,7 @@ const ContactUs = () => {
                 // action={
                 //   "https://script.google.com/macros/s/AKfycbyDmkyts4OHtaC2zl-tBle0dOuVrclNe2gT6HB_As09XlwLccFKbgf8Zf_UklBz0o0Z/exec"
                 // }
-                onSubmit={handleSubmit2}
+                onSubmit={handleSubmit}
                 className="form"
               >
                 <input

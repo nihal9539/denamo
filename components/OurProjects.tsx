@@ -13,32 +13,32 @@ export default function ConstructionProjects() {
   const projects = [
     {
       title: "Residential Projects",
-      image: "/project/Residential-Projects.jpg",
+      image: "/projects/Residential-Projects.jpg",
       path: "/projects/residential-project",
     },
     {
       title: "Hotels & Restaurants Projects",
-      image: "/project/hotel.jpg",
+      image: "/projects/hotel.jpg",
       path: "/projects/hotels-restaurants",
     },
     {
       title: "Commercial Projects",
-      image: "/project/Commercial-Projects.jpg",
+      image: "/projects/Commercial-Projects.jpg",
       path: "/projects/commercial-project",
     },
     {
       title: "Educational Projects",
-      image: "/project/Educational-Projects.jpg",
+      image: "/projects/Educational-Projects.jpg",
       path: "/projects/educational",
     },
     {
       title: "Airports Projects",
-      image: "/project/Airports.jpg",
+      image: "/projects/Airports.jpg",
       path: "/projects/airports",
     },
     {
       title: "Medical Projects",
-      image: "/project/Medical-Projects.jpg",
+      image: "/projects/Medical-Projects.jpg",
       path: "/projects/medical",
     },
   ];

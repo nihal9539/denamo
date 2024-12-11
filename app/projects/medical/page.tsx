@@ -188,7 +188,7 @@ export default function MedicalProjects() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <HeaderWithTitle
-        image={"/project/Medical-Projects.jpg"}
+        image={"/projects/Medical-Projects.jpg"}
         title={"Medical projects"}
       />
 

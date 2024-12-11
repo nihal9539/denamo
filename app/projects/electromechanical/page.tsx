@@ -39,7 +39,7 @@ export default function Electromechanical() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={"/project/Electromechanical-1.jpg"} title={"Electromechanical projects"} />
+      <HeaderWithTitle image={"/projects/Electromechanical-1.jpg"} title={"Electromechanical projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

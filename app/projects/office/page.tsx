@@ -123,7 +123,7 @@ export default function OfficeProjects() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
      
-      <HeaderWithTitle image={"/project/Office.jpg"} title={"Office projects"} />
+      <HeaderWithTitle image={"/projects/Office.jpg"} title={"Office projects"} />
 
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">

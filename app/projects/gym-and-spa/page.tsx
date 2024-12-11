@@ -17,7 +17,7 @@ const projects = [
 const page = () => {
   return (
 <div className="min-h-screen bg-gradient-to-b from-background to-muted">
-      <HeaderWithTitle image={"/project/spa-gym.jpg"} title={"GYM & SPA PROJECTS"} />
+      <HeaderWithTitle image={"/projects/spa-gym.jpg"} title={"GYM & SPA PROJECTS"} />
       <div className=" mx-auto  ">
         <div className=" max-md:space-y-10">
           {projects.map((project, index) => (
