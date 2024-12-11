@@ -13,7 +13,7 @@ export default function ConstructionProjects() {
   const projects = [
     {
       title: "Residential Projects",
-      image: "/projects/Residential-Projects.jpg",
+      image: "/projects/Residential-projects.jpg",
       path: "/projects/residential-project",
     },
     {
@@ -23,12 +23,12 @@ export default function ConstructionProjects() {
     },
     {
       title: "Commercial Projects",
-      image: "/projects/Commercial-Projects.jpg",
+      image: "/projects/commercial-projects.jpg",
       path: "/projects/commercial-project",
     },
     {
       title: "Educational Projects",
-      image: "/projects/Educational-Projects.jpg",
+      image: "/projects/educational-projects.jpg",
       path: "/projects/educational",
     },
     {
