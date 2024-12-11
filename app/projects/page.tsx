@@ -32,7 +32,7 @@ const projectCategories = [
   },
   {
     name: "Educational Projects",
-    image: "/projects/educational-Projects.jpg",
+    image: "/projects/educational-projects.jpg",
     featured: false,
     link: "/projects/educational",
   },
