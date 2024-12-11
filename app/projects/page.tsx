@@ -7,13 +7,13 @@ import Link from "next/link";
 const projectCategories = [
   {
     name: "Residential Projects",
-    image: "/projects/Residential-Projects.jpg",
+    image: "/projects/residential-projects.jpg",
     featured: true,
     link: "/projects/residential-project",
   },
   {
     name: "Commercial Projects",
-    image: "/projects/Commercial-Projects.jpg",
+    image: "/projects/commercial-projects.jpg",
     featured: true,
     link: "/projects/commercial-project",
   },
@@ -32,7 +32,7 @@ const projectCategories = [
   },
   {
     name: "Educational Projects",
-    image: "/projects/Educational-Projects.jpg",
+    image: "/projects/educational-Projects.jpg",
     featured: false,
     link: "/projects/educational",
   },
